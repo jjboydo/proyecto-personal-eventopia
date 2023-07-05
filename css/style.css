@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Righteous', cursive;
+
+Colores 
+
+#11080E 60% Black
+#F4F1F9 30% White
+#FE500B 10% Orange
+
+*/
+
+/* HEADER */
+
+nav {
+    background-color: #11080E;
+    color: #F4F1F9;
+    display: flex;
+    justify-content: space-between;
+    padding: .625rem .625rem;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 3rem;
+    color: #575757;
+    font-family: 'Righteous', cursive;
+}
+
+.navbar {
+    list-style: none;
+    font-family: 'Righteous', cursive;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.navbar .container-seleccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3125rem;
+}
+
+.navbar li a {
+    text-decoration: none;
+    background-color: #11080E;
+    color: #F4F1F9;
+    font-size: 1.25rem;
+    height: 1.5rem;
+}
+
+/* INICIO */
+
+/* SECCION PRINCIPAL */
+
+.section-principal {
+    background-color: #11080E;
+    color: #F4F1F9;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-principal .titulo {
+    width: 33.1875rem;
+    height: 23.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-principal h2 {
+    font-size: 3.5rem;
+    font-family: 'Righteous', cursive;
+}
+
+.section-principal p {
+    font-size: 1.125rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-principal button {
+    background-color: #FE500B;
+    width: 9.4375rem;
+    height: 3rem;
+    align-items: center;
+    padding: .75rem 1.25rem;
+    border-radius: .875rem;
+    border-style: none;
+}
+
+.section-principal button a {
+    text-decoration: none;
+    color: #F4F1F9;
+    font-size: 1.25rem;
+    font-family: 'Righteous', cursive;
+}
+
+/* SECCION CARDS */
+
+.section-cards {
+    background-color: #F4F1F9;
+    color: #11080E;
+    display: flex;
+    justify-content: center;
+    height: 31.25rem;
+}
+
+.section-cards .texto {
+    width: 21.875rem;
+    height: 23.2188rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-descripcion {
+    display: flex;
+    justify-content: left;
+    gap: 1.25rem;
+    padding-bottom: .625rem;
+}
+
+.section-cards h3 {
+    font-size: 1.125rem;
+    font-family: 'Righteous', cursive;
+}
+
+.section-cards p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* SECCION INFO 1 */
+
+.section-info-1 {
+    background-color: #F4F1F9;
+    color: #11080E;
+    height: 31.25rem;
+    display: flex;
+    padding: 3.75rem 10.3125rem;
+}
+
+.section-info-1 article {
+    width: 27.8125rem;
+    height: 18.375rem;
+}
+
+.section-info-1 h2 {
+    font-size: 1.5rem;
+    font-family: 'Righteous', cursive;
+}
+
+.section-info-1 p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-info-1 ul {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    list-style-image: url(../assets/img/Icon.png);
+    padding-left: 2rem;
+}
+
+/* SECCION INFO 2 */
+
+.section-info-2 {
+    background-color: #F4F1F9;
+    color: #11080E;
+}
+
+.section-info-2 .texto {
+    width: 33.75rem;
+    height: 11.75rem;
+}
+
+.section-info-2 .caracteristicas {
+    width: 33.75rem;
+    height: 18.75rem;
+}
+
+.section-info-2 h2 {
+    font-size: 2.5rem;
+    font-family: 'Righteous', cursive;
+}
+
+.section-info-2 p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-info-2 li {
+    font-size: 1rem;
+    font-family: 'Righteous', cursive;
+}
+
+/* SECCION NUEVO CLIENTE */
+
+.section-nuevo-cliente {
+    background-color: #FE500B;
+    color: #11080E;
+    width: 100%;
+    height: 15.75rem;
+}
+
+.section-nuevo-cliente .texto {
+    width: 33.75rem;
+    height: 11.3125rem;
+}
+
+.section-nuevo-cliente h2 {
+    font-size: 2.5rem;
+    font-family: 'Righteous', cursive;
+}
+
+.section-nuevo-cliente button {
+    background-color: #F4F1F9;
+    border-color: #FE500B;
+    align-items: center;
+    padding: .75rem 1.25rem;
+    width: 12.9375rem;
+    height: 3rem;
+    border-radius: .875rem;
+    border-style: none;
+}
+
+.section-nuevo-cliente button a {
+    text-decoration: none;
+    color: #FE500B;
+    font-size: 1.25rem;
+    font-family: 'Righteous', cursive;
+}
+
+/* SECCION LOGIN */
+
+.section-login {
+    background-color: #F4F1F9;
+    color: #11080E;
+    height: 54.3125rem;
+    display: flex;
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+.iniciar-sesion {
+    width: 27.4375rem;
+    height: 47.8125rem;
+}
+
+.iniciar-sesion h2 {
+    font-size: 2.25rem;
+    font-family: 'Righteous', cursive;
+}
+
+.iniciar-sesion p {
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.iniciar-sesion label {
+    font-size: 1rem;
+    font-family: 'Righteous', cursive;
+}
+
+.iniciar-sesion input {
+    width: 27.4375rem;
+    height: 3rem;
+    border-radius: .75rem;
+    background: #F7FBFF;
+    border: .0625rem solid #D4D7E3;
+}
+
+.iniciar-sesion form input::placeholder {
+    color: #8897AD;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.iniciar-sesion a {
+    color: #FE500B;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Righteous', cursive;
+}
+
+.iniciar-sesion button {
+    background-color: #FE500B;
+    border-color: #FE500B;
+    border-radius: .75rem;
+    color: #F4F1F9;
+    font-size: 1.25rem;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    width: 27.4375rem;
+    height: 3.25rem;
+}
+
+.login-alt button {
+    background-color: #F3F9FA;
+    color: #11080E;
+    border-style: none;
+}
+
+.login-alt img {
+    background-image: none;
+}
+
+.registrate-container p {
+    font-size: 1rem;
+    font-family: 'Righteous', cursive;
+    color: #11080E;
+}
+
+/* CONTACTO */
+
+/* SECCION TITULO */
+
+.section-titulo-contacto {
+    width: 100%;
+    height: 18.3125rem;
+    background-image: url(../assets/img/foto-titulo-contacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-titulo-contacto h2 {
+    color: #F4F1F9;
+    font-size: 3.75rem;
+    font-family: 'Righteous', cursive;
+    width: 36.125rem;
+    height: 10.125rem;
+}
+
+/* SECCION DATOS */
+
+.section-datos-contacto {
+    background-color: #F3F9FA;
+    color: #11080E;
+    display: flex;
+    height: 44.75rem;
+}
+
+.section-datos-contacto .titulo {
+    width: 34.125rem;
+    height: 5.9375rem;
+    flex-direction: column;
+}
+
+.section-datos-contacto h2 {
+    font-size: 2.875rem;
+    font-family: 'Righteous', cursive;
+}
+
+.section-datos-contacto p {
+    font-size: .875rem;
+    font-family: 'Poppins', cursive;
+}
+
+.section-datos-contacto form {
+    display: flex;
+    flex-direction: column;
+    row-gap: .625rem;
+    width: 34.25rem;
+    height: 23rem;
+}
+
+.section-datos-contacto input {
+    height: 55px;
+    padding: .75rem 0rem;
+    border-radius: .75rem;
+    background: #F7FBFF;
+    border: .0625rem solid #D4D7E3;
+}
+
+.section-datos-contacto form input::placeholder {
+    color: #8897AD;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-datos-contacto button {
+    background-color: #FE500B;
+    border-color: #FE500B;
+    border-radius: .75rem;
+    border-style: none;
+    color: #F4F1F9;
+    font-size: 1.25rem;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    width: 34.3125rem;
+    height: 3.375rem;
+}
+
+/* SOBRE NOSOTROS */
+
+/* SECCION TITULO NOSOTROS*/
+
+.section-titulo-about {
+    height: 18.3125rem;
+    background-image: url(../assets/img/foto-titulo-about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-titulo-about h2 {
+    color: #F4F1F9;
+    font-size: 3.75rem;
+    font-family: 'Righteous', cursive;
+    width: 36.125rem;
+    height: 3.5275rem;
+}
+
+.section-marcas {
+    background-color: #FE500B;
+    height: 18.5625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marcas-container{
+    height: 10.5rem;
+}
+
+.section-video {
+    background-color: #F3F9FA;
+    color: #11080E;
+    height: 36.875rem;
+    padding-top: 2.4375rem;
+}
+
+.section-video .container-metricas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-video h3 {
+    font-size: 6rem;
+    font-family: 'Righteous', cursive;
+    display: flex;
+}
+
+.section-video h4 {
+    font-size: 2.25rem;
+    font-family: 'Righteous', cursive;
+    display: flex;
+}
+
+/* EVENTOS */
+
+/* SECCION EVENTOS PRINCIPALES */
+
+.section-eventos-principales {
+    background-image: url(../assets/img/wimbledon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F3F9FA;
+    height: 19.75rem;
+}
+
+.section-eventos-principales .descripcion {
+    width: 36.125rem;
+    height: 10.2775rem;
+    background-image: none;
+}
+
+.section-eventos-principales a {
+    font-size: 4rem;
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    color: #F3F9FA;
+}
+
+.section-eventos-principales h4 {
+    font-size: 2rem;
+    font-family: 'Righteous', cursive;
+}
+
+.section-eventos-principales h5 {
+    font-size: 2rem;
+    font-family: 'Righteous', cursive;
+}
+
+.section-eventos {
+    background-color: #F3F9FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: .625rem;
+}
+
+.section-categoria {
+    background-color: #F3F9FA;
+    color: #11080E;
+    width: 75rem;
+    height: 31.25rem;
+    padding-top: 1.4375rem;
+}
+
+.section-categoria .article-container {
+    display: flex;
+}
+
+.section-categoria article {
+    background: #FFFFFF;
+    box-shadow: 0rem -0.5rem 5rem rgba(0, 0, 0, 0.07), 0rem -2.92013px 29.2013px rgba(0, 0, 0, 0.0482987), 0px -1.41767px 14.1767px rgba(0, 0, 0, 0.0389404), 0px -0.694968px 6.94968px rgba(0, 0, 0, 0.0310596), 0px -0.274791px 2.74791px rgba(0, 0, 0, 0.0217013);
+    border-radius: .625rem;
+    width: 24.1669rem;
+    height: 25rem;
+}
+
+.section-categoria img {
+    height: 15rem;
+    padding: 1.25rem 1.25rem 0rem 1.25rem;
+}
+
+.section-categoria h3 {
+    color: #FE500B;
+    font-size: 2.25rem;
+    font-family: 'Righteous', cursive;
+    padding: 1.25rem 1.25rem 0rem 1.25rem;
+}
+
+.section-categoria a {
+    font-size: 1rem;
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    color: #11080E;
+}
+
+.section-categoria h4 {
+    padding: 1.25rem 1.25rem 0rem 1.25rem;
+}
+
+.section-categoria p {
+    color: #FE500B;
+    font-size: .75rem;
+    font-family: 'Righteous', cursive;
+    padding: 1.25rem 1.25rem 0rem 1.25rem;
+}
+
+.section-categoria h6 {
+    color: #7E7E7E;
+    font-size: .75rem;
+    font-family: 'Righteous', cursive;
+    padding: 1.25rem 1.25rem 0rem 1.25rem;
+}
+
+.section-eventos button {
+    background-color: #FE500B;
+    border-color: #FE500B;
+    color: #F4F1F9;
+    font-size: 1.25rem;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    width: 24.25rem;
+    height: 3.25rem;
+    border-radius: .75rem;
+    border-style: none;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #11080E;
+    color: #F4F1F9;
+    width: 100%;
+    height: 15.375rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 15.625rem;
+    height: 3.5625rem;
+}
+
+.footer-logo p {
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-info-contacto {
+    width: 17.4375rem;
+    height: 8.6875rem;
+}
+
+.footer-info-contacto p {
+    font-size: .875rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-suscribirse {
+    font-size: .875rem;
+    font-family: 'Poppins', sans-serif;
+    width: 21.875rem;
+    height: 9.75rem;
+}
+
+.footer-suscribirse legend {
+    font-size: 1rem;
+    font-family: 'Righteous', cursive;
+}
+
+.footer-suscribirse form input {
+    background-color: #FE500B;
+    font-size: .875rem;
+    font-family: 'Poppins', sans-serif;
+    width: 21.875rem;
+    height: 3rem;
+    border-style: none;
+}
+
+#enviar {
+    display: none;
+}
+
+.footer-suscribirse form input::placeholder {
+    color: #F4F1F9;
+}
+
+.footer-redes-sociales {
+    width: 12.875rem;
+    height: 6rem;
+}
