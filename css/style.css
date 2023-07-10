@@ -21,12 +21,16 @@ Colores
 
 /* HEADER */
 
+header {
+    width: 100%;
+}
+
 nav {
     background-color: #11080E;
     color: #F4F1F9;
     display: flex;
-    justify-content: space-between;
-    padding: .625rem .625rem;
+    justify-content: space-around;
+    padding: .9375rem 2.1875rem;
     align-items: center;
 }
 
@@ -34,6 +38,8 @@ nav h1 {
     font-size: 3rem;
     color: #575757;
     font-family: 'Righteous', cursive;
+    width: 17.0625rem;
+    height: 4rem;
 }
 
 .navbar {
@@ -61,15 +67,21 @@ nav h1 {
 
 /* INICIO */
 
+/* main {
+    background-color: #F4F1F9;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    overflow: auto;
+} */
+
 /* SECCION PRINCIPAL */
 
 .section-principal {
     background-color: #11080E;
     color: #F4F1F9;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .section-principal .titulo {
@@ -77,6 +89,17 @@ nav h1 {
     height: 23.5rem;
     display: flex;
     flex-direction: column;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+    padding-left: 3.125rem;
+    gap: 1.25rem;
+}
+
+.section-principal img {
+    width: 100%;
+    grid-column: 2/3;
+    justify-self: end;
 }
 
 .section-principal h2 {
@@ -110,24 +133,42 @@ nav h1 {
 
 .section-cards {
     background-color: #F4F1F9;
+    grid-row: 2/3;
     color: #11080E;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 31.25rem;
+    gap: 2rem;
+    padding-top: .3125rem;
 }
 
 .section-cards .texto {
     width: 21.875rem;
-    height: 23.2188rem;
+    height: 28rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+}
+
+.section-cards .texto img {
+    align-self: center;
+    border-radius: 13px;
+    box-shadow: 13px 17px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .cards-descripcion {
     display: flex;
-    justify-content: left;
+    align-items: center;
     gap: 1.25rem;
+    padding-top: .625rem;
     padding-bottom: .625rem;
+}
+
+.cards-descripcion img {
+    box-shadow: none;
 }
 
 .section-cards h3 {
@@ -138,6 +179,7 @@ nav h1 {
 .section-cards p {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
+    text-align: justify;
 }
 
 /* SECCION INFO 1 */
@@ -145,14 +187,23 @@ nav h1 {
 .section-info-1 {
     background-color: #F4F1F9;
     color: #11080E;
+    width: 100%;
     height: 31.25rem;
-    display: flex;
-    padding: 3.75rem 10.3125rem;
+    padding: 3.75rem 7.3125rem;
+    grid-row: 3/4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.875rem;
 }
 
 .section-info-1 article {
     width: 27.8125rem;
     height: 18.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
 }
 
 .section-info-1 h2 {
@@ -172,21 +223,79 @@ nav h1 {
     padding-left: 2rem;
 }
 
+/* SECCION INFO 11 */
+
+.section-info-11 {
+    background-color: #F4F1F9;
+    color: #11080E;
+    width: 100%;
+    height: 31.25rem;
+    padding: 3.75rem 7.3125rem;
+    grid-row: 3/4;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.875rem;
+}
+
+.section-info-11 article {
+    width: 27.8125rem;
+    height: 18.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.section-info-11 h2 {
+    font-size: 1.5rem;
+    font-family: 'Righteous', cursive;
+}
+
+.section-info-11 p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-info-11 ul {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    list-style-image: url(../assets/img/Icon.png);
+    padding-left: 2rem;
+}
+
+
 /* SECCION INFO 2 */
 
 .section-info-2 {
     background-color: #F4F1F9;
     color: #11080E;
+    grid-row: 5/6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-info-2 .texto {
     width: 33.75rem;
     height: 11.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .section-info-2 .caracteristicas {
     width: 33.75rem;
     height: 18.75rem;
+    margin-top: 1.25rem;
+}
+
+.section-info-2 div {
+    display: flex;
+    gap: 14.25rem;
+    margin-top: .9375rem;
+    margin-bottom: .9375rem;
 }
 
 .section-info-2 h2 {
@@ -199,9 +308,10 @@ nav h1 {
     font-family: 'Poppins', sans-serif;
 }
 
-.section-info-2 li {
+.section-info-2 .caracteristicas li {
     font-size: 1rem;
     font-family: 'Righteous', cursive;
+    list-style: none;
 }
 
 /* SECCION NUEVO CLIENTE */
@@ -211,6 +321,12 @@ nav h1 {
     color: #11080E;
     width: 100%;
     height: 15.75rem;
+    grid-row: 6/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .section-nuevo-cliente .texto {
@@ -221,6 +337,7 @@ nav h1 {
 .section-nuevo-cliente h2 {
     font-size: 2.5rem;
     font-family: 'Righteous', cursive;
+    text-align: center;
 }
 
 .section-nuevo-cliente button {
@@ -574,17 +691,23 @@ nav h1 {
 /* FOOTER */
 
 footer {
+    grid-area: footer;
     background-color: #11080E;
     color: #F4F1F9;
     width: 100%;
     height: 15.375rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1.875rem;
 }
 
 .footer-logo {
-    width: 15.625rem;
-    height: 3.5625rem;
+    width: 17.75rem;
+    height: 8.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer-logo p {
@@ -595,10 +718,25 @@ footer {
 .footer-info-contacto {
     width: 17.4375rem;
     height: 8.6875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-info-contacto div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: left;
+}
+
+.footer-info-contacto img {
+    width: 1.875rem;
+    height: 1.875rem;
 }
 
 .footer-info-contacto p {
-    font-size: .875rem;
+    font-size: 1rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -607,11 +745,16 @@ footer {
     font-family: 'Poppins', sans-serif;
     width: 21.875rem;
     height: 9.75rem;
+    display: inline-flex;
+    flex-direction: column;
+    gap: .625rem;
+    align-items: start;
 }
 
 .footer-suscribirse legend {
     font-size: 1rem;
     font-family: 'Righteous', cursive;
+    margin-bottom: 1rem;
 }
 
 .footer-suscribirse form input {
@@ -629,9 +772,13 @@ footer {
 
 .footer-suscribirse form input::placeholder {
     color: #F4F1F9;
+    padding-left: .625rem;
 }
 
 .footer-redes-sociales {
     width: 12.875rem;
     height: 6rem;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
 }
