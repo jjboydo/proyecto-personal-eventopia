@@ -65,6 +65,11 @@ nav h1 {
     height: 1.5rem;
 }
 
+.navbar li a:hover {
+    color: #FE500B;
+}
+
+
 /* INICIO */
 
 /* main {
@@ -81,11 +86,11 @@ nav h1 {
     background-color: #11080E;
     color: #F4F1F9;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1.15fr 1fr;
 }
 
 .section-principal .titulo {
-    width: 33.1875rem;
+    width: 40.1875rem;
     height: 23.5rem;
     display: flex;
     flex-direction: column;
@@ -93,7 +98,7 @@ nav h1 {
     align-self: center;
     justify-self: center;
     padding-left: 3.125rem;
-    gap: 1.25rem;
+    gap: 2.25rem;
 }
 
 .section-principal img {
