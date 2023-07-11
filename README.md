@@ -6,5 +6,6 @@ Eventopía es un sitio web responsive dedicado a ofrecer una amplia gama de bole
 
 - HTML5
 - CSS3
+- Bootstrap
 
 ![Logo de Eventopía](assets/img/logo-naranja.png)
