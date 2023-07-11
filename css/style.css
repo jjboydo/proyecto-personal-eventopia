@@ -433,6 +433,7 @@ nav h1 {
     color: #8897AD;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
+    padding-left: .625rem;
 }
 
 .iniciar-sesion a {
@@ -493,12 +494,24 @@ nav h1 {
 
 /* SECCION TITULO */
 
+.main-contacto {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 44.75rem;
+}
+
 .section-titulo-contacto {
     width: 100%;
     height: 18.3125rem;
     background-image: url(../assets/img/foto-titulo-contacto.png);
     background-repeat: no-repeat;
     background-size: cover;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    padding-left: 2.8125rem;
 }
 
 .section-titulo-contacto h2 {
@@ -514,14 +527,23 @@ nav h1 {
 .section-datos-contacto {
     background-color: #F3F9FA;
     color: #11080E;
+    /* height: 44.75rem; */
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    width: 100%;
+    padding: 2.0625rem 2.8125rem 0rem 2.8125rem;
     display: flex;
-    height: 44.75rem;
+    flex-direction: column;
+    align-items: start;
+    gap: .625rem;
 }
 
 .section-datos-contacto .titulo {
-    width: 34.125rem;
-    height: 5.9375rem;
+    width: 100%;
+    padding: 0%;
+    display: flex;
     flex-direction: column;
+    justify-content: left;
 }
 
 .section-datos-contacto h2 {
@@ -538,11 +560,13 @@ nav h1 {
     display: flex;
     flex-direction: column;
     row-gap: .625rem;
-    width: 34.25rem;
+    width: 90%;
     height: 23rem;
+    padding-left: 1.25rem;
 }
 
 .section-datos-contacto input {
+    width: 100%;
     height: 55px;
     padding: .75rem 0rem;
     border-radius: .75rem;
@@ -554,6 +578,12 @@ nav h1 {
     color: #8897AD;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
+    padding-left: .625rem;
+}
+
+.pais-ciudad {
+    display: flex;
+    justify-content: space-between;
 }
 
 .section-datos-contacto button {
@@ -565,8 +595,15 @@ nav h1 {
     font-size: 1.25rem;
     font-family: 'Righteous', cursive;
     text-align: center;
-    width: 34.3125rem;
+    width: 100%;
     height: 3.375rem;
+    margin-top: 3.125rem;
+}
+
+.main-contacto iframe {
+    width: 100%;
+    grid-row: 2/3;
+    grid-column: 2/3;
 }
 
 /* SOBRE NOSOTROS */
