@@ -192,6 +192,7 @@ nav h1 {
     align-items: center;
     justify-content: center;
     gap: 6.875rem;
+    overflow: hidden;
 }
 
 .section-info-1 article {
@@ -527,7 +528,6 @@ nav h1 {
 .section-datos-contacto {
     background-color: #F3F9FA;
     color: #11080E;
-    /* height: 44.75rem; */
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     width: 100%;
@@ -611,10 +611,14 @@ nav h1 {
 /* SECCION TITULO NOSOTROS*/
 
 .section-titulo-about {
+    width: 100%;
     height: 18.3125rem;
     background-image: url(../assets/img/foto-titulo-about.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 2.8125rem;
 }
 
 .section-titulo-about h2 {
@@ -627,38 +631,53 @@ nav h1 {
 
 .section-marcas {
     background-color: #FE500B;
+    width: 100%;
     height: 18.5625rem;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .marcas-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
     height: 10.5rem;
 }
 
 .section-video {
+    width: 100%;
     background-color: #F3F9FA;
     color: #11080E;
     height: 36.875rem;
     padding-top: 2.4375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-video iframe {
+
+}
+
+.section-video div {
+    width: 100%;
 }
 
 .section-video .container-metricas {
     display: flex;
     justify-content: space-between;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 .section-video h3 {
     font-size: 6rem;
     font-family: 'Righteous', cursive;
-    display: flex;
 }
 
 .section-video h4 {
     font-size: 2.25rem;
     font-family: 'Righteous', cursive;
-    display: flex;
 }
 
 /* EVENTOS */
