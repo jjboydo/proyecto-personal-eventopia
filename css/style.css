@@ -655,10 +655,6 @@ nav h1 {
     align-items: center;
 }
 
-.section-video iframe {
-
-}
-
 .section-video div {
     width: 100%;
 }
@@ -690,12 +686,19 @@ nav h1 {
     background-size: cover;
     color: #F3F9FA;
     height: 19.75rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding-left: 2.5rem;
 }
 
 .section-eventos-principales .descripcion {
     width: 36.125rem;
     height: 10.2775rem;
     background-image: none;
+    padding-left: 0%;
 }
 
 .section-eventos-principales a {
@@ -715,8 +718,11 @@ nav h1 {
     font-family: 'Righteous', cursive;
 }
 
+/* SECCION EVENTOS */
+
 .section-eventos {
     background-color: #F3F9FA;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -727,12 +733,18 @@ nav h1 {
     background-color: #F3F9FA;
     color: #11080E;
     width: 75rem;
-    height: 31.25rem;
-    padding-top: 1.4375rem;
+    height: 34.375rem;
+    margin-top: 1.4375rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+    align-items: start;
 }
 
 .section-categoria .article-container {
+    width: 100%;
     display: flex;
+    gap: 1.25rem;
 }
 
 .section-categoria article {
@@ -741,18 +753,19 @@ nav h1 {
     border-radius: .625rem;
     width: 24.1669rem;
     height: 25rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-categoria img {
-    height: 15rem;
-    padding: 1.25rem 1.25rem 0rem 1.25rem;
+    margin: 1.25rem 1.25rem 0rem 1.25rem;
 }
 
 .section-categoria h3 {
     color: #FE500B;
     font-size: 2.25rem;
     font-family: 'Righteous', cursive;
-    padding: 1.25rem 1.25rem 0rem 1.25rem;
+    padding: 1.25rem 1.25rem 0rem 0px;
 }
 
 .section-categoria a {
@@ -791,6 +804,7 @@ nav h1 {
     height: 3.25rem;
     border-radius: .75rem;
     border-style: none;
+    margin-bottom: 2.5rem;
 }
 
 /* FOOTER */
