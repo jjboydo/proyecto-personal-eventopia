@@ -967,6 +967,10 @@ footer {
         align-items: center;
     }
 
+    nav h1 {
+        text-align: center;
+    }
+
     .navbar li {
         display: none;
     }
@@ -1039,11 +1043,162 @@ footer {
     }
 
     .footer-redes-sociales {
-        width: 564px;
+        /* width: 564px; */
+        width: 100%;
         height: 96px;
         justify-content: space-evenly;
     }
 
+}
+
+/* 480px */
+
+@media (max-width: 480px){
+
+    /* HEADER */
+
+    nav {
+        padding: .625rem .9375rem;
+    }
+
+    nav .menu {
+        width: 1.4375rem;
+    }
+
+    nav h1 {
+        font-size: 1.875rem;
+        width: 162px;
+        height: 38px;
+        text-align: center;
+    }
+
+    .navbar .search img {
+        width: 2.125rem;
+    }
+
+    /* LOGIN */
+
+    .img-container .logo {
+        width: 80%;
+    }
+
+    .iniciar-sesion {
+        width: 80%;
+    }
+
+    .iniciar-sesion input {
+        width: 22.5rem;
+    }
+
+    .iniciar-sesion button {
+        width: 22.5rem;
+    }
+
+    .iniciar-sesion .titulo-container h2 {
+        text-align: center;
+    }
+
+    .iniciar-sesion h2 {
+        font-size: 2rem;
+    }
+
+    .iniciar-sesion p {
+        font-size: .875rem;
+    }
+
+    .login-alt button {
+        gap: .625rem;
+        font-size: 1rem;
+    }
+
+    .registrate-container {
+        flex-direction: column;
+        align-items: center;
+        gap: .3125rem;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        height: 774px;
+        padding: 0rem .9375rem;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer-logo p {
+        font-size: 1.125rem;
+    }
+
+    .footer-info-contacto{
+        width: 100%;
+    }
+
+    .footer-suscribirse {
+        width: 100%;
+    }
+
+    .footer-suscribirse form {
+        width: 100%;
+    }
+
+    .footer-suscribirse form input {
+        width: 100%;
+    }
+
+    .footer-redes-sociales{
+        width: 100%;
+    }
+
+    .footer-redes-sociales a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-redes-sociales a img {
+        width: 80%;
+    }
+
+}
+
+/* 380px */
+
+@media (max-width: 380px){
+        /* LOGIN */
+    
+        .iniciar-sesion input {
+            width: 18.75rem;
+        }
+    
+        .iniciar-sesion button {
+            width: 18.75rem;
+        }
+    
+        .iniciar-sesion .titulo-container h2 {
+            text-align: center;
+        }
+    
+        .iniciar-sesion h2 {
+            font-size: 2rem;
+        }
+    
+        .iniciar-sesion p {
+            font-size: .875rem;
+        }
+    
+        .login-alt button {
+            gap: .625rem;
+            font-size: 1rem;
+        }
+    
+        .registrate-container {
+            flex-direction: column;
+            align-items: center;
+            gap: .3125rem;
+        }
 }
 
 /* 320px */
