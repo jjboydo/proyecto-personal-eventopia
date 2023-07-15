@@ -164,7 +164,6 @@ nav h1 {
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
-    /* overflow: hidden; */
 }
 
 .flecha-adelante {
@@ -179,7 +178,6 @@ nav h1 {
     flex-direction: column;
     gap: 0rem;
     align-items: start;
-    /* overflow: hidden; */
 }
 
 .cards-container .texto img {
@@ -215,6 +213,7 @@ nav h1 {
 
 .cards-container a {
     text-decoration: none;
+    display: none;
 }
 
 .cards-container h4 {
@@ -222,7 +221,6 @@ nav h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: #FE500B;
-    display: none;
 }
 
 /* SECCION INFO 1 */
@@ -345,7 +343,9 @@ nav h1 {
     width: 37.5rem;
 }
 
-/* .section-info-2 div {
+/* REEMPLAZADA POR BOOTSTRAP
+
+.section-info-2 div {
     display: flex;
     align-items: center;
     gap: 14.25rem;
@@ -418,7 +418,6 @@ nav h1 {
 .section-login {
     background-color: #F4F1F9;
     color: #11080E;
-    /* height: 54.3125rem; */
     display: grid;
     grid-template-columns: 40% 60%;
 }
@@ -978,7 +977,7 @@ footer {
     }
 
     .section-info-1 {
-        gap: 48px;
+        gap: 3rem;
         padding: 2.75rem 5.3125rem;
     }
 
@@ -987,7 +986,7 @@ footer {
     }
 
     .section-info-11 {
-        gap: 48px;
+        gap: 3rem;
         padding: 2.75rem 5.3125rem;
     }
 
@@ -1020,7 +1019,6 @@ footer {
     }
 
     .section-info-1 {
-        gap: 3rem;
         padding: 2.75rem 2.3125rem;
     }
 
@@ -1029,7 +1027,6 @@ footer {
     }
 
     .section-info-11 {
-        gap: 3rem;
         padding: 2.75rem 2.3125rem;
     }
 
@@ -1292,7 +1289,6 @@ footer {
 
     .section-principal h2 {
         font-size: 2.5rem;
-        text-align: center;
     }
 
     .section-cards {
@@ -1425,7 +1421,7 @@ footer {
         align-items: center;
     }
 
-    .cards-container h4 {
+    .cards-container a {
         display: block;
     }
 
@@ -1720,7 +1716,6 @@ footer {
 
     .cards-container .texto {
         width: 10.8125rem;
-        align-items: center;
         height: 15.625rem;
     }
 
@@ -1756,9 +1751,6 @@ footer {
 
     .section-info-2 .texto {
         width: 18.75rem;
-        padding: .9375rem;
-        height: auto;
-        margin-bottom: 0;
     }
 
     .section-info-2 .texto {
