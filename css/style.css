@@ -103,6 +103,10 @@ nav h1 {
     justify-self: end;
 }
 
+.section-principal .img-fullscreen {
+    display: none;
+}
+
 .section-principal h2 {
     font-size: 3.5rem;
     font-family: 'Righteous', cursive;
@@ -318,6 +322,7 @@ nav h1 {
 
 .section-info-2 div {
     display: flex;
+    align-items: center;
     gap: 14.25rem;
     margin-top: .9375rem;
     margin-bottom: .9375rem;
@@ -1138,6 +1143,58 @@ footer {
         width: 3.125rem;
     }
 
+    /* INICIO */
+
+    .section-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .section-principal .titulo {
+        order: 1;
+        grid-row: 1/2;
+        background: none;
+        padding-left: 3.125rem;
+        padding-right: 3.125rem;
+        gap: 2.25rem;
+    }
+
+    .section-principal img {
+        display: none;
+    }
+
+    .section-principal .img-fullscreen {
+        display: block;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        box-shadow: 406px 4px 44px 0px #11080E inset;
+    }
+
+    .section-principal p {
+        font-size: .9375rem;
+    }
+
+    .section-principal h2 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .section-principal button {
+        width: 9.4375rem;
+        height: 3rem;
+    }
+
+    .section-cards {
+        grid-gap: 0px;
+    }
+
+    .cards-container .texto {
+        width: 12.5rem;
+    }
+
+    .cards-container .texto img {
+        width: 100%;
+    }
+
     /* LOGIN */
 
     .section-login{
@@ -1198,6 +1255,72 @@ footer {
         width: 100%;
         height: 96px;
         justify-content: space-evenly;
+    }
+
+}
+
+/* 640px */
+
+@media (max-width: 640px){
+
+    /* INICIO */
+
+    .section-principal h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .section-cards {
+        grid-template-columns: 1fr;
+        height: 40.625rem;
+        align-content: start;
+        padding-top: 1.875rem;
+    }
+
+    .flecha-atras {
+        display: none;
+    }
+
+    .flecha-adelante {
+        display: none;
+    }
+
+    .cards-container .texto {
+        justify-content: start;
+        gap: 1.25rem;
+        height: 18.75rem;
+    }
+
+    .cards-container p {
+        display: none;
+    }
+
+    .section-info-1 img {
+        width: 28.125rem;
+        height: 17.5rem;
+    }
+
+    .section-info-11 img {
+        width: 28.125rem;
+        height: 17.5rem;
+    }
+
+    .section-info-2 .texto {
+        width: 26.875rem;
+    }
+
+    .section-info-2 .caracteristicas {
+        width: 26.875rem;
+        height: 23.75rem;
+    }
+
+    .section-info-2 ul img {
+        width: .875rem;
+        height: 1.375rem;
+    }
+
+    .section-nuevo-cliente .texto {
+        width: 100%;
     }
 
 }
