@@ -197,6 +197,8 @@ nav h1 {
 
 .cards-container .texto .cards-descripcion img {
     box-shadow: none;
+    width: 2.1875rem;
+    height: 2.1875rem;
 }
 
 .cards-container h3 {
@@ -1346,9 +1348,18 @@ footer {
         text-align: center;
     }
 
+    nav h1 img {
+        width: 162px;
+        height: 38px;
+    }
+
     .navbar .search img {
         width: 2.125rem;
     }
+
+    /* INICIO */
+
+
 
     /* LOGIN */
 
@@ -1441,6 +1452,103 @@ footer {
 /* 380px */
 
 @media (max-width: 380px){
+
+        /* INICIO */
+
+        .section-principal .titulo {
+            padding: 0rem .625rem;
+            align-items: center;
+            gap: .625rem;
+        }
+
+        .section-principal h2 {
+            font-size: 1.5rem;
+        }
+
+        .section-principal p {
+            font-size: .75rem;
+            text-align: center;
+        }
+
+        .section-principal button {
+            width: 113px;
+            height: 42px;
+            border-radius: 24px;
+        }
+
+        .section-principal button a {
+            font-size: 1rem;
+        }
+
+        .section-cards {
+            height: 56.25rem;
+        }
+
+        .cards-container {
+            height: 50rem;
+        }
+
+        .cards-container .texto {
+            width: 10.8125rem;
+            align-items: center;
+            height: 15.625rem;
+        }
+
+        .section-info-1 {
+            gap: 1rem;
+        }
+
+        .section-info-1 img {
+            width: 238px;
+            height: 220px;
+        }
+
+        .section-info-1 article {
+            width: 16.6875rem;
+            padding: .9375rem;
+            height: 27.75rem;
+        }
+
+        .section-info-11 {
+            gap: 1rem;
+        }
+
+        .section-info-11 img {
+            width: 238px;
+            height: 220px;
+        }
+
+        .section-info-11 article {
+            width: 16.6875rem;
+            padding: .9375rem;
+            height: 27.75rem;
+        }
+
+        .section-info-2 .texto {
+            width: 18.75rem;
+            padding: .9375rem;
+            height: auto;
+            margin-bottom: 0;
+        }
+
+        .section-info-2 h2 {
+            font-size: 2rem;
+        }
+
+        .section-info-2 .caracteristicas {
+            width: 18.75rem;
+            padding: .9375rem;
+            margin-top: 0;
+            height: auto;
+        }
+
+        .section-info-2 .caracteristicas div {
+            gap: 2.625rem;
+        }
+
+        .section-nuevo-cliente h2 {
+            font-size: 2.1875rem;
+        }
 
         /* LOGIN */
     
