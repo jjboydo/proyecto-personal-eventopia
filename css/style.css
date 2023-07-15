@@ -213,6 +213,18 @@ nav h1 {
     text-align: justify;
 }
 
+.cards-container a {
+    text-decoration: none;
+}
+
+.cards-container h4 {
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #FE500B;
+    display: none;
+}
+
 /* SECCION INFO 1 */
 
 .section-info-1 {
@@ -1401,7 +1413,7 @@ footer {
     }
 
     .section-cards {
-        height: 56.25rem;
+        height: 66rem;
     }
 
     .cards-container {
@@ -1411,6 +1423,10 @@ footer {
 
     .cards-container .texto {
         align-items: center;
+    }
+
+    .cards-container h4 {
+        display: block;
     }
 
     .section-info-1 {
@@ -1567,6 +1583,10 @@ footer {
 
         /* INICIO */
 
+        .section-cards{
+            height: 57rem;
+        }
+
         .cards-container .texto{
             width: 10.8125rem;
             height: 15.625rem;
@@ -1589,7 +1609,7 @@ footer {
 
         .section-info-11 article {
             width: 18.6875rem;
-            height: 29.75rem;
+            height: auto;
         }
 
         .section-info-2 .texto {
