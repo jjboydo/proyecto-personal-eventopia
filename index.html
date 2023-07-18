@@ -13,20 +13,39 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav>
-            <img class="menu" src="./assets/img/Menu.png" alt="Menu Desplegable">
-            <h1><a href="index.html"><img src="./assets/img/logo-naranja.png" alt="Eventopía"></a></h1>
-            <ul class="navbar">
-                <div class="container-seleccion">
-                    <li><a href="index.html">Inicio</a></li>
-                    <img src="./assets/img/rectangulo-inicio.png" alt="">
+        <nav class="navbar navbar-expand-lg px-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/img/logo-naranja.png" alt="Eventopía">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <div class="container-seleccion" class="nav-item">
+                            <li><a class="nav-link" href="index.html">Inicio</a></li>
+                            <img src="./assets/img/rectangulo-inicio.png" alt="">
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/about.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/login.html">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><img src="./assets/img/buscar.png" alt="Busqueda"></a>
+                        </li>
+                    </ul>
                 </div>
-                <li><a href="./pages/eventos.html">Eventos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/about.html">Sobre Nosotros</a></li>
-                <li><a href="./pages/login.html">Iniciar Sesión</a></li>
-                <li class="search"><img src="./assets/img/buscar.png" alt="Busqueda"></li>
-            </ul>
+            </div>
         </nav>
     </header>
 

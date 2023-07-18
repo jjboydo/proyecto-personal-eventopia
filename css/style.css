@@ -28,14 +28,6 @@ header {
 nav {
     background-color: #11080E;
     color: #F4F1F9;
-    display: flex;
-    justify-content: space-around;
-    padding: .9375rem 2.1875rem;
-    align-items: center;
-}
-
-nav .menu {
-    display: none;
 }
 
 nav h1 {
@@ -44,9 +36,61 @@ nav h1 {
     font-family: 'Righteous', cursive;
     width: 17.0625rem;
     height: 4rem;
+    margin: 0rem;
 }
 
 .navbar {
+    font-family: 'Righteous', cursive;
+}
+
+.navbar .container-seleccion {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.navbar li a {
+    background-color: #11080E;
+    color: #F4F1F9;
+    font-size: 1.25rem;
+}
+
+.navbar li a:hover {
+    color: #FE500B;
+}
+
+.navbar-toggler {
+    border: 0rem solid var(--bs-navbar-toggler-border-color);
+}
+
+.navbar-toggler-icon {
+    background-image: url(../assets/img/Menu.png);
+}
+
+/* HEADER NO BOOTSTRAP, UTILIZADO EN: CONTACTO, EVENTOS Y SOBRE NOSOTROS */
+
+.nav-no-bootstrap {
+    background-color: #11080E;
+    color: #F4F1F9;
+    display: flex;
+    justify-content: space-around;
+    padding: .9375rem 2.1875rem;
+    align-items: center;
+}
+
+.nav-no-bootstrap .menu {
+    display: none;
+}
+
+.nav-no-bootstrap h1 {
+    font-size: 3rem;
+    color: #575757;
+    font-family: 'Righteous', cursive;
+    width: 17.0625rem;
+    height: 4rem;
+}
+
+.navbar-no-bootstrap {
     list-style: none;
     font-family: 'Righteous', cursive;
     display: flex;
@@ -54,14 +98,14 @@ nav h1 {
     align-items: center;
 }
 
-.navbar .container-seleccion {
+.navbar-no-bootstrap .container-seleccion {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: .3125rem;
 }
 
-.navbar li a {
+.navbar-no-bootstrap li a {
     text-decoration: none;
     background-color: #11080E;
     color: #F4F1F9;
@@ -69,10 +113,9 @@ nav h1 {
     height: 1.5rem;
 }
 
-.navbar li a:hover {
+.navbar-no-bootstrap li a:hover {
     color: #FE500B;
 }
-
 
 /* INICIO */
 
@@ -440,13 +483,14 @@ nav h1 {
 .iniciar-sesion {
     grid-column: 2/3;
     width: 27.4375rem;
-    height: 50rem;
+    height: auto;
     justify-self: center;
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 3rem;
     margin-top: 3.375rem;
+    margin-bottom: 2rem;
 }
 
 .iniciar-sesion .titulo-container {
@@ -1040,11 +1084,6 @@ footer {
 
 @media (max-width:1024px){
 
-    /* HEADER */
-    nav{
-        flex-direction: column;
-    }
-
     /* INICIO */
 
     .section-principal {
@@ -1132,38 +1171,6 @@ footer {
 /* 768px */
 
 @media (max-width: 768px){
-
-    /* HEADER */
-
-    nav .menu {
-        display: block;
-    }
-
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav h1 {
-        text-align: center;
-    }
-
-    .navbar li {
-        display: none;
-    }
-
-    .navbar .container-seleccion {
-        display: none;
-    }
-
-    .navbar .search {
-        display: block;
-    }
-
-    .navbar .search img {
-        width: 3.125rem;
-    }
 
     /* INICIO */
 
@@ -1285,6 +1292,13 @@ footer {
 
 @media (max-width: 640px){
 
+    /* HEADER */
+
+    .navbar-brand img {
+        width: 202px;
+        height: 48px;
+    }
+
     /* INICIO */
 
     .section-principal h2 {
@@ -1357,28 +1371,15 @@ footer {
 
     /* HEADER */
 
-    nav {
-        padding: .625rem .9375rem;
-    }
-
-    nav .menu {
-        width: 1.4375rem;
+    .navbar-brand img {
+        width: 162px;
+        height: 38px;
     }
 
     nav h1 {
-        font-size: 1.875rem;
+        font-size: 2rem;
         width: 162px;
         height: 38px;
-        text-align: center;
-    }
-
-    nav h1 img {
-        width: 162px;
-        height: 38px;
-    }
-
-    .navbar .search img {
-        width: 2.125rem;
     }
 
     /* INICIO */
@@ -1577,6 +1578,13 @@ footer {
 
 @media (max-width: 380px){
 
+        /* HEADER */
+
+        .px-4 {
+            padding-right: 0.5rem!important;
+            padding-left: 0.5rem!important;
+        }
+
         /* INICIO */
 
         .section-cards{
@@ -1660,23 +1668,9 @@ footer {
 
     /* HEADER */
 
-    nav {
-        padding: .625rem .9375rem;
-    }
-
-    nav .menu {
-        width: 1.4375rem;
-    }
-
-    nav h1 {
-        font-size: 1.5rem;
-        width: 162px;
-        height: 38px;
-        text-align: center;
-    }
-
-    .navbar .search img {
-        width: 2.125rem;
+    .px-4 {
+        padding-right: 0rem!important;
+        padding-left: 0rem!important;
     }
 
     /* INICIO */
