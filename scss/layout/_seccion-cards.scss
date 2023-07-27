@@ -1,0 +1,72 @@
+/* ESTA SECCION CORRESPONDE AL MAIN DE INDEX */
+
+.section-cards {
+    background-color: #F4F1F9;
+    color: $color-60;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6rem 1fr 6rem;
+    grid-template-rows: 28.125rem;
+    height: 31.25rem;
+    gap: 2rem;
+    padding-top: .3125rem;
+    grid-gap: 1.25rem;
+    align-content: center;
+}
+
+.flecha-atras {
+    grid-column: 1/2;
+    align-self: center;
+}
+
+.cards-container {
+    grid-column: 2/3;
+    @include flex(row,wrap,space-evenly,center);
+    gap: 2rem;
+    .texto {
+        width: 21.875rem;
+        height: 28rem;
+        gap: 0rem;
+        @include flex(column, none, none, start);
+        img {
+            align-self: center;
+            border-radius: 13px;
+            box-shadow: 13px 17px 20px 0px rgba(0, 0, 0, 0.25);
+        }
+        .cards-descripcion {
+            @include flex(row, none, none, flex-end);
+            gap: 1.25rem;
+            padding-top: 0.625rem;
+            padding-bottom: 0.625rem;
+            img {
+                box-shadow: none;
+                width: 2.1875rem;
+                height: 2.1875rem;
+            }
+            h3 {
+                font-size: 1.125rem;
+                font-family: $typo-titulos;
+            }
+        }
+        p {
+            font-size: 1rem;
+            font-family: $typo-parrafos;
+            text-align: justify;
+        }
+    }
+    a {
+        text-decoration: none;
+        display: none;
+        h4 {
+            font-size: 1.25rem;
+            font-family: $typo-parrafos;
+            font-weight: bold;
+            color: $color-10;
+        }
+    }
+}
+
+.flecha-adelante {
+    grid-column: 3/4;
+    align-self: center;
+}

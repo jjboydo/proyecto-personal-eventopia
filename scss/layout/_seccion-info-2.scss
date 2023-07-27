@@ -1,0 +1,33 @@
+/* ESTA SECCION CORRESPONDE AL MAIN DEL INDEX */
+
+.section-info-2 {
+    background-color: $color-30;
+    color: $color-60;
+    @include flex(column,none,none,center);
+    .texto {
+        width: 33.75rem;
+        height: 11.75rem;
+        @include flex(column,none,none,center);
+        gap: 20px;
+        margin-bottom: 1.25rem;
+    }
+    .accordion {
+        align-items: center;
+        margin-bottom: 3.125rem;
+        .accordion-item {
+            width: 37.5rem;
+            .accordion-body {
+                font-size: 1rem;
+                font-family: $typo-parrafos;
+            }
+        }
+    }
+    h2 {
+        font-size: 2.5rem;
+        font-family: $typo-titulos;
+    }
+    p {
+        font-size: 1rem;
+        font-family: $typo-parrafos;
+    }
+}

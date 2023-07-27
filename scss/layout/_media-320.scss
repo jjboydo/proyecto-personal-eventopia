@@ -1,0 +1,149 @@
+@media (max-width: 320px){
+    
+    /* HEADER */
+
+    .px-4 {
+        padding-right: 0rem!important;
+        padding-left: 0rem!important;
+    }
+
+    /* INICIO */
+
+    .section-principal { 
+        .titulo {
+            padding: 0rem .625rem;
+            align-items: center;
+            gap: .625rem;
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: .75rem;
+                text-align: center;
+            }
+            button {
+                width: 113px;
+                height: 42px;
+                border-radius: 24px;
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .section-cards {
+        height: 56.25rem;
+    }
+
+    .cards-container {
+        height: 50rem;
+        .texto {
+            width: 10.8125rem;
+            height: 15.625rem;
+        }
+    }
+
+    .section-info-1 {
+        gap: 1rem;
+        img {
+            width: 238px;
+            height: 220px;
+        }
+        article {
+            width: 16.6875rem;
+            padding: .9375rem;
+            height: auto;
+        }
+    }
+
+    .section-info-11 {
+        gap: 1rem;
+        img {
+            width: 238px;
+            height: 220px;
+        }
+        article {
+            width: 16.6875rem;
+            padding: .9375rem;
+            height: auto;
+        }
+    }
+
+    .section-info-2 {
+        .texto {
+            width: 16.25rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    /* LOGIN */
+
+    .img-container .logo {
+        width: 90%;
+    }
+
+    .iniciar-sesion {
+        width: 16.3125rem;
+        form input {
+            width: 16.3125rem;
+        }
+        button {
+            width: 16.3125rem;
+        }
+    }
+
+    .login-alt button {
+        gap: .625rem;
+        font-size: 1rem;
+    }
+
+    .registrate-container {
+        flex-direction: column;
+        align-items: center;
+        gap: .3125rem;
+    }
+
+    /* FOOTER */
+
+    footer {
+        height: 774px;
+        padding: 0rem .9375rem;
+    }
+    
+    .footer-logo {
+        width: 100%;
+        p {
+            font-size: 1.125rem;
+        }
+    }
+
+    .footer-info-contacto{
+        width: 100%;
+    }
+
+    .footer-suscribirse {
+        width: 100%;
+        form {
+            width: 100%;
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer-redes-sociales{
+        width: 100%;
+        a {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 80%;
+            }
+        }
+    }
+
+
+}

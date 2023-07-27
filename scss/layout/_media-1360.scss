@@ -1,0 +1,28 @@
+@media (max-width:1360px){
+    
+    /* INICIO */
+
+    .cards-container {
+        justify-content: space-around;
+        .texto {
+            width: 15.625rem;
+        }
+    }
+
+    .section-info-1 {
+        gap: 3rem;
+        padding: 2.75rem 5.3125rem;
+        img {
+            width: 31.25rem;
+        }
+    }
+
+    .section-info-11 {
+        gap: 3rem;
+        padding: 2.75rem 5.3125rem;
+        img {
+            width: 31.25rem;
+        }
+    }
+
+}

@@ -1,0 +1,47 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+@import "./base/typo";
+@import "./base/reset";
+
+@import "./layout/header";
+
+/* Layouts correspondientes al index */
+
+@import "./layout/seccion-principal";
+@import "./layout/seccion-cards";
+@import "./layout/seccion-info-1";
+@import "./layout/seccion-info-2";
+@import "./layout/seccion-nuevo-cliente";
+
+/* Layouts correspondientes al login */
+
+@import "./layout/seccion-login";
+
+/* Layouts correspondientes al contacto */
+
+@import "./layout/seccion-titulo-contacto";
+@import "./layout/seccion-datos-contacto";
+
+/* Layouts correspondientes al sobre nosotros */
+
+@import "./layout/seccion-marcas";
+@import "./layout/seccion-video";
+
+/* Layouts correspondientes a eventos */
+
+@import "./layout/seccion-eventos-principales";
+@import "./layout/seccion-eventos";
+
+@import "./layout/footer";
+
+/* Layouts correspondientes a media queries */
+
+@import "./layout/media-1360";
+@import "./layout/media-1100";
+@import "./layout/media-1024";
+@import "./layout/media-768";
+@import "./layout/media-640";
+@import "./layout/media-480";
+@import "./layout/media-380";
+@import "./layout/media-320";

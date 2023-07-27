@@ -1,0 +1,35 @@
+/* SECCION NUEVO CLIENTE - MAIN INDEX */
+
+.section-nuevo-cliente {
+    background-color: $color-10;
+    color: $color-60;
+    width: 100%;
+    height: 15.75rem;
+    @include flex(column,none,center,center);
+    gap: 2rem;
+    .texto {
+        width: 33.75rem;
+        height: 11.3125rem;
+        h2 {
+            font-size: 2.5rem;
+            font-family: $typo-titulos;
+            text-align: center;
+        }
+        button {
+            background-color: $color-30;
+            border-color: $color-10;
+            align-items: center;
+            padding: 0.75rem 1.25rem;
+            width: 12.9375rem;
+            height: 3rem;
+            border-radius: 0.875rem;
+            border-style: none;
+            a {
+                text-decoration: none;
+                color: $color-10;
+                font-size: 1.25rem;
+                font-family: $typo-titulos;
+            }
+        }
+    }
+}

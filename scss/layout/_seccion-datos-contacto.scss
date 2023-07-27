@@ -1,0 +1,60 @@
+.section-datos-contacto {
+    background-color: $color-30;
+    color: $color-60;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    width: 100%;
+    padding: 2.0625rem 2.8125rem 0rem 2.8125rem;
+    @include flex(column,none,none,start);
+    gap: 0.625rem;
+    .titulo {
+        width: 100%;
+        padding: 0%;
+        @include flex(column,none,left,none);
+        h2 {
+            font-size: 2.875rem;
+            font-family: $typo-titulos;
+        }
+        p {
+            font-size: 0.875rem;
+            font-family: $typo-parrafos;
+        }
+    }
+    form {
+        @include flex(column,none,none,none);
+        row-gap: 0.625rem;
+        width: 90%;
+        height: 23rem;
+        padding-left: 1.25rem;
+        input {
+            width: 100%;
+            height: 55px;
+            padding: 0.75rem 0rem;
+            border-radius: 0.75rem;
+            background: #F7FBFF;
+            border: 0.0625rem solid #D4D7E3;
+            &::placeholder {
+                color: #8897AD;
+                font-size: 1rem;
+                font-family: $typo-parrafos;
+                padding-left: 0.625rem;
+            }
+        }
+        .pais-ciudad {
+            @include flex(row,none,space-between,none);
+        }
+        button {
+            background-color: $color-10;
+            border-color: $color-10;
+            border-radius: 0.75rem;
+            border-style: none;
+            color: $color-30;
+            font-size: 1.25rem;
+            font-family: $typo-titulos;
+            text-align: center;
+            width: 100%;
+            height: 3.375rem;
+            margin-top: 3.125rem;
+        }
+    }
+}

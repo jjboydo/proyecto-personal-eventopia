@@ -1,0 +1,77 @@
+footer {
+    background-color: $color-60;
+    color: $color-30;
+    width: 100%;
+    height: 15.375rem;
+    @include flex(row,wrap,space-between,center);
+    padding: 0rem 1.875rem;
+}
+
+.footer-logo {
+    width: 17.75rem;
+    height: 8.75rem;
+    @include flex(column,none,space-between,none);
+    p {
+        font-size: 1.25rem;
+        font-family: $typo-parrafos;
+    }
+}
+
+.footer-info-contacto {
+    width: 17.4375rem;
+    height: 8.6875rem;
+    @include flex(column,none,space-between,none);
+    div {
+        gap: 1rem;
+        @include flex(row,none,left,center);
+        img {
+            width: 1.875rem;
+            height: 1.875rem;
+        }
+        p {
+            font-size: 1rem;
+            font-family: $typo-parrafos;
+        }
+    }
+}
+
+.footer-suscribirse {
+    font-size: .875rem;
+    font-family: $typo-parrafos;
+    width: 21.875rem;
+    height: 9.75rem;
+    display: inline-flex;
+    flex-direction: column;
+    gap: .625rem;
+    align-items: start;
+    legend {
+        font-size: 1rem;
+        font-family: $typo-titulos;
+        margin-bottom: 1rem;
+    }
+    form {
+        input {
+            background-color: $color-10;
+            font-size: .875rem;
+            font-family: $typo-parrafos;
+            width: 21.875rem;
+            height: 3rem;
+            border-style: none;
+            &::placeholder {
+                color: $color-30;
+                padding-left: 0.625rem;
+            }
+        }
+    }
+}
+
+#enviar {
+    display: none;
+}
+
+.footer-redes-sociales {
+    width: 12.875rem;
+    height: 6rem;
+    @include flex(row,none,none,center);
+    gap: 1.25rem;
+}

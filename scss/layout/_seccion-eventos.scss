@@ -1,0 +1,78 @@
+.section-eventos {
+    background-color: $color-30;
+    width: 100%;
+    @include flex(column,none,none,center);
+    padding-bottom: .625rem;
+    button {
+        background-color: $color-10;
+        border-color: $color-10;
+        color: $color-30;
+        font-size: 1.25rem;
+        font-family: $typo-titulos;
+        text-align: center;
+        width: 24.25rem;
+        height: 3.25rem;
+        border-radius: .75rem;
+        border-style: none;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.section-categoria {
+    background-color: $color-30;
+    color: $color-60;
+    width: 75rem;
+    height: 34.375rem;
+    margin-top: 1.4375rem;
+    @include flex(column,none,none,start);
+    gap: 1.5625rem;
+    h3 {
+        color: $color-10;
+        font-size: 2.25rem;
+        font-family: $typo-titulos;
+        padding: 1.25rem 1.25rem 0rem 0px;
+    }
+    .article-container {
+        width: 100%;
+        display: flex;
+        gap: 1.25rem;
+        article {
+            background: #FFFFFF;
+            box-shadow: 0rem -0.5rem 5rem rgba(0, 0, 0, 0.07),
+                0rem -2.92013px 29.2013px rgba(0, 0, 0, 0.0482987),
+                0px -1.41767px 14.1767px rgba(0, 0, 0, 0.0389404),
+                0px -0.694968px 6.94968px rgba(0, 0, 0, 0.0310596),
+                0px -0.274791px 2.74791px rgba(0, 0, 0, 0.0217013);
+            border-radius: .625rem;
+            width: 24.1669rem;
+            height: 25rem;
+            display: flex;
+            flex-direction: column;
+            img {
+                margin: 1.25rem 1.25rem 0rem 1.25rem;
+            }
+            a {
+                font-size: 1rem;
+                font-family: $typo-titulos;
+                text-decoration: none;
+                color: $color-60;
+            }
+            h4 {
+                padding: 1.25rem 1.25rem 0rem 1.25rem;
+            }
+            p {
+                color: $color-10;
+                font-size: .75rem;
+                font-family: $typo-titulos;
+                padding: 1.25rem 1.25rem 0rem 1.25rem;
+            }
+            h6 {
+                color: #7E7E7E;
+                font-size: .75rem;
+                font-family: $typo-titulos;
+                padding: 1.25rem 1.25rem 0rem 1.25rem;
+            }
+        }
+    }
+}
+

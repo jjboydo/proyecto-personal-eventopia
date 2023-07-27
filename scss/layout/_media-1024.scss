@@ -1,0 +1,74 @@
+@media (max-width:1024px){
+
+    /* INICIO */
+
+    .section-principal {
+        grid-template-columns: 1fr 1fr;
+        .titulo {
+            width: 100%;
+            h2 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: .875rem;
+            }
+            button {
+                width: 8.4375rem;
+                height: 2.5rem;
+                line-height: 1rem;
+                a {
+                    font-size: 1.15rem;
+                }
+            }
+        }
+    }
+
+    .cards-container .texto {
+        width: 15.25rem;
+    }
+
+    .section-info-1 {
+        flex-direction: column-reverse;
+        height: 48.75rem;
+        img{
+            width: 34.375rem;
+            height: 23.75rem;
+        }
+    }
+
+    .section-info-11{
+        flex-direction: column;
+        height: 48.75rem;
+        img{
+            width: 34.375rem;
+            height: 23.75rem;
+        }
+    }
+
+    /* LOGIN */
+
+    .iniciar-sesion {
+        width: 21.4375rem;
+        form input {
+            width: 22.4375rem;
+        }
+        button {
+            width: 22.4375rem;
+        }
+    }
+
+    /* FOOTER */
+    footer{
+        height: 28.125rem;
+        flex-wrap: wrap-reverse;
+        gap: 1.25rem;
+    }
+
+    .footer-info-contacto{
+        align-items: end;
+        div {
+            flex-direction: row-reverse;
+        }
+    }
+
+}

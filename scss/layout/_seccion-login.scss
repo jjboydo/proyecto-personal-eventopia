@@ -1,0 +1,113 @@
+.section-login {
+    background-color: $color-30;
+    color: $color-60;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.img-container {
+    grid-column: 1/2;
+    background-image: url(../assets/img/foto-login.png);
+    background-size: cover;
+    @include flex(row, none, center, none);
+    width: 100%;
+    .logo {
+        background-image: none;
+        @include flex(row, none, none, none);
+        align-self: center;
+    }
+}
+
+.iniciar-sesion {
+    grid-column: 2/3;
+    width: 27.4375rem;
+    height: auto;
+    justify-self: center;
+    @include flex(column, none, none, start);
+    gap: 3rem;
+    margin-top: 3.375rem;
+    margin-bottom: 2rem;
+    .titulo-container {
+        @include flex(column, none, none, start);
+        gap: 1.75rem;
+        h2 {
+            font-size: 2.25rem;
+            font-family: $typo-titulos;
+        }
+        p {
+            font-size: 1.25rem;
+            font-family: $typo-parrafos;
+        }
+    }
+    form {
+        @include flex(column, none, center, start); // Using the flex mixin here
+        gap: 1.25rem;
+        label {
+            font-size: 1rem;
+            font-family: $typo-titulos;
+        }
+        input {
+            width: 27.4375rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background: #F7FBFF;
+            border: 0.0625rem solid #D4D7E3;
+            &::placeholder {
+                color: #8897AD;
+                font-size: 1rem;
+                font-family: $typo-parrafos;
+                padding-left: 0.625rem;
+            }
+        }
+        a {
+            color: $color-10;
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: $typo-titulos;
+        }
+    }
+    button {
+        background-color: $color-10;
+        border-color: $color-10;
+        border-radius: 0.75rem;
+        color: $color-30;
+        font-size: 1.25rem;
+        font-family: $typo-titulos;
+        text-align: center;
+        width: 27.4375rem;
+        height: 3.25rem;
+        border-style: none;
+    }
+}
+
+.login-alt {
+    @include flex(column, none, none, start); // Using the flex mixin here
+    gap: 16px;
+    button {
+        background-color: #b5b5b571;
+        color: $color-60;
+        border-style: none;
+        @include flex(row, none, center, center); // Using the flex mixin here
+        gap: 1.25rem;
+    }
+    img {
+        background-image: none;
+    }
+}
+
+.registrate-container {
+    width: 100%;
+    @include flex(row, none, center, none);
+    gap: 0.625rem;
+    p {
+        font-size: 1rem;
+        font-family: $typo-titulos;
+        color: $color-60;
+    }
+    a {
+        color: $color-10;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: $typo-titulos;
+    }
+}

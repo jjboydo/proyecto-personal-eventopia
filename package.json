@@ -1,0 +1,11 @@
+{
+  "name": "proyecto-personal",
+  "version": "1.0.0",
+  "description": "Eventopía es un sitio web responsive dedicado a ofrecer una amplia gama de boletos para diversos eventos en todo el mundo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

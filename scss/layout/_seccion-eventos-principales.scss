@@ -1,0 +1,31 @@
+.section-eventos-principales {
+    height: 19.75rem;
+    width: 100%;
+    background-image: url(../assets/img/wimbledon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-30;
+    @include flex(column, none, space-around, start);
+    padding-left: 2.5rem;
+    .descripcion {
+        width: 36.125rem;
+        height: 10.2775rem;
+        background-image: none;
+        padding-left: 0%;
+        a {
+            font-size: 4rem;
+            font-family: $typo-titulos;
+            text-decoration: none;
+            color: $color-30;
+        }
+        h4 {
+            font-size: 2rem;
+            font-family: $typo-titulos;
+        }
+    
+        h5 {
+            font-size: 2rem;
+            font-family: $typo-titulos;
+        }
+    }
+}
