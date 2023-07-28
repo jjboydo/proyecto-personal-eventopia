@@ -1266,6 +1266,9 @@ footer {
   .section-datos-contacto {
     padding: 2.0625rem 2.1875rem;
   }
+  .section-datos-contacto form button {
+    margin-top: 2.125rem;
+  }
   /* FOOTER */
   footer {
     height: 774px;
@@ -1351,6 +1354,13 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 0.3125rem;
+  }
+  /* CONTACTO */
+  .main-contacto {
+    grid-template-rows: auto 48.75rem 24.75rem;
+  }
+  .section-datos-contacto .titulo h2 {
+    font-size: 2.25rem;
   }
 }
 @media (max-width: 320px) {
@@ -1441,6 +1451,19 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 0.3125rem;
+  }
+  /* CONTACTO */
+  .section-titulo-contacto h2 {
+    font-size: 2.25rem;
+  }
+  .section-datos-contacto {
+    padding: 2.0625rem 1.25rem;
+  }
+  .section-datos-contacto .titulo h2 {
+    font-size: 2rem;
+  }
+  .section-datos-contacto .titulo p {
+    font-size: 0.875rem;
   }
   /* FOOTER */
   footer {

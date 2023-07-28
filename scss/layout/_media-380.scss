@@ -71,4 +71,18 @@
         gap: .3125rem;
     }
 
+    /* CONTACTO */
+
+    .main-contacto {
+        grid-template-rows: auto 48.75rem 24.75rem;
+    }
+
+    .section-datos-contacto {
+        .titulo{
+            h2 {
+                font-size: 2.25rem;
+            }
+        }
+    }
+
 }
