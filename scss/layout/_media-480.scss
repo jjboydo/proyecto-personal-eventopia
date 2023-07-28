@@ -135,6 +135,44 @@
         gap: .3125rem;
     }
 
+    /* SOBRE NOSOTROS */
+
+    .section-titulo-about {
+        padding: 0 1.875rem;
+        h2 {
+            font-size: 2.75rem;
+            text-align: center;
+        }
+    }
+
+    .section-marcas {
+        padding: 1.25rem 1.5625rem;
+        padding-bottom: 0;
+        .marcas-container {
+            gap: 3.5rem;
+            img{
+                width: 7.5rem;
+            }
+        }
+    }
+
+    .section-video {
+        height: 56.25rem;
+    }
+
+    .container-metricas {
+        @include flex(column,none,start,center);
+        gap: 1.25rem;
+        .datos{
+            h3{
+                font-size: 4.375rem;
+            }
+            h4 {
+                font-size: 1.875rem;
+            }
+        }
+    }
+
     /* CONTACTO */
 
     .section-titulo-contacto {

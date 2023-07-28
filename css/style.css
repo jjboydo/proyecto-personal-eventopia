@@ -602,6 +602,7 @@ Se agrupan ya que tienen los mismos estilos
   padding: 1.25rem 2.5rem;
 }
 .section-marcas .marcas-container {
+  overflow: hidden;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -623,9 +624,6 @@ Se agrupan ya que tienen los mismos estilos
   justify-content: none;
   align-items: center;
 }
-.section-video div {
-  width: 100%;
-}
 
 .container-metricas {
   display: flex;
@@ -636,12 +634,20 @@ Se agrupan ya que tienen los mismos estilos
   padding-left: 8rem;
   padding-right: 8rem;
   margin-top: 0.625rem;
+  width: 100%;
 }
-.container-metricas h3 {
+.container-metricas .datos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+}
+.container-metricas .datos h3 {
   font-size: 6rem;
   font-family: "Righteous", cursive;
 }
-.container-metricas h4 {
+.container-metricas .datos h4 {
   font-size: 2.25rem;
   font-family: "Righteous", cursive;
 }
@@ -1073,10 +1079,10 @@ footer {
   .section-video iframe {
     margin-bottom: 1.875rem;
   }
-  .container-metricas h3 {
+  .container-metricas .datos h3 {
     font-size: 4.375rem;
   }
-  .container-metricas h4 {
+  .container-metricas .datos h4 {
     font-size: 1.875rem;
   }
   /* FOOTER */
@@ -1164,13 +1170,16 @@ footer {
   .section-video iframe {
     width: 90%;
   }
-  .container-metricas h3 {
+  .container-metricas .datos h3 {
     font-size: 3.75rem;
   }
-  .container-metricas h4 {
+  .container-metricas .datos h4 {
     font-size: 1.5625rem;
   }
   /* CONTACTO */
+  .section-titulo-contacto h2 {
+    font-size: 3.25rem;
+  }
   .main-contacto {
     grid-template-rows: auto 48.75rem 44.75rem;
   }
@@ -1287,6 +1296,41 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 0.3125rem;
+  }
+  /* SOBRE NOSOTROS */
+  .section-titulo-about, .section-titulo-contacto {
+    padding: 0 1.875rem;
+  }
+  .section-titulo-about h2, .section-titulo-contacto h2 {
+    font-size: 2.75rem;
+    text-align: center;
+  }
+  .section-marcas {
+    padding: 1.25rem 1.5625rem;
+    padding-bottom: 0;
+  }
+  .section-marcas .marcas-container {
+    gap: 3.5rem;
+  }
+  .section-marcas .marcas-container img {
+    width: 7.5rem;
+  }
+  .section-video {
+    height: 56.25rem;
+  }
+  .container-metricas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: start;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .container-metricas .datos h3 {
+    font-size: 4.375rem;
+  }
+  .container-metricas .datos h4 {
+    font-size: 1.875rem;
   }
   /* CONTACTO */
   .section-titulo-contacto {

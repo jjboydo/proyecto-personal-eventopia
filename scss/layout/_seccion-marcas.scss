@@ -6,6 +6,7 @@
     @include flex(row,wrap,none,center);
     padding: 1.25rem 2.5rem;
     .marcas-container {
+        overflow: hidden;
         width: 100%;
         @include flex(row,wrap,space-evenly,none);
         height: 10.5rem;
