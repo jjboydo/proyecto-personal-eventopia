@@ -72,6 +72,21 @@
         }
     }
 
+    /* CONTACTO */
+
+    .main-contacto {
+        grid-template-rows: auto 44.75rem 44.75rem;
+        grid-template-columns: 1fr;
+        iframe {
+            grid-row: 3/4;
+            grid-column: 1/2;
+        }
+    }
+
+    .section-datos-contacto {
+        padding: 2.0625rem 3.125rem;
+    }
+
     /* FOOTER */
 
     footer {

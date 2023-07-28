@@ -63,4 +63,15 @@
         width: 100%;
     }
 
+    /* CONTACTO */
+
+    .section-titulo-contacto {
+        h2 {
+            font-size: 3.25rem;
+        }
+    }
+    
+    .main-contacto {
+        grid-template-rows: auto 48.75rem 44.75rem;
+    }
 }

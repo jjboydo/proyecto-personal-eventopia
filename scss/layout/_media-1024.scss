@@ -57,6 +57,20 @@
         }
     }
 
+    /* CONTACTO */
+
+    .main-contacto {
+        grid-template-columns: 1.30fr 1fr;
+        grid-template-rows: auto 48.75rem;
+    }
+
+    .section-datos-contacto {
+        form {
+            width: 100%;
+            padding-left: 0%;
+        }
+    }
+
     /* FOOTER */
     footer{
         height: 28.125rem;

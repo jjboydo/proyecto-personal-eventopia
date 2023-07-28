@@ -135,6 +135,25 @@
         gap: .3125rem;
     }
 
+    /* CONTACTO */
+
+    .section-titulo-contacto {
+        padding: 0 1.875rem;
+        h2 {
+            font-size: 2.75rem;
+            text-align: center;
+        }
+    }
+
+    .section-datos-contacto {
+        padding: 2.0625rem 2.1875rem;
+        .titulo {
+            h2{
+                // font-size: 2.25rem;
+            }
+        }
+    }
+
     /* FOOTER */
 
     footer {

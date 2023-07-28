@@ -463,6 +463,7 @@ header nav h1 {
 }
 .main-contacto iframe {
   width: 100%;
+  height: 100%;
   grid-row: 2/3;
   grid-column: 2/3;
 }
@@ -501,6 +502,7 @@ Se agrupan ya que tienen los mismos estilos
   flex-wrap: none;
   justify-content: none;
   align-items: center;
+  font-weight: bold;
 }
 
 .section-titulo-contacto {
@@ -515,7 +517,7 @@ Se agrupan ya que tienen los mismos estilos
   grid-row: 2/3;
   grid-column: 1/2;
   width: 100%;
-  padding: 2.0625rem 2.8125rem 0rem 2.8125rem;
+  padding: 2.0625rem 2.5rem 0rem 2.8125rem;
   display: flex;
   flex-direction: column;
   flex-wrap: none;
@@ -958,6 +960,15 @@ footer {
   .iniciar-sesion button {
     width: 22.4375rem;
   }
+  /* CONTACTO */
+  .main-contacto {
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: auto 48.75rem;
+  }
+  .section-datos-contacto form {
+    width: 100%;
+    padding-left: 0%;
+  }
   /* FOOTER */
   footer {
     height: 28.125rem;
@@ -1036,6 +1047,18 @@ footer {
   .iniciar-sesion button {
     width: 27.4375rem;
   }
+  /* CONTACTO */
+  .main-contacto {
+    grid-template-rows: auto 44.75rem 44.75rem;
+    grid-template-columns: 1fr;
+  }
+  .main-contacto iframe {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .section-datos-contacto {
+    padding: 2.0625rem 3.125rem;
+  }
   /* FOOTER */
   footer {
     height: 46.25rem;
@@ -1110,6 +1133,13 @@ footer {
   }
   .section-nuevo-cliente .texto {
     width: 100%;
+  }
+  /* CONTACTO */
+  .section-titulo-contacto h2 {
+    font-size: 3.25rem;
+  }
+  .main-contacto {
+    grid-template-rows: auto 48.75rem 44.75rem;
   }
 }
 @media (max-width: 480px) {
@@ -1224,6 +1254,17 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 0.3125rem;
+  }
+  /* CONTACTO */
+  .section-titulo-contacto {
+    padding: 0 1.875rem;
+  }
+  .section-titulo-contacto h2 {
+    font-size: 2.75rem;
+    text-align: center;
+  }
+  .section-datos-contacto {
+    padding: 2.0625rem 2.1875rem;
   }
   /* FOOTER */
   footer {
