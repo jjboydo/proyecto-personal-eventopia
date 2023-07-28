@@ -63,15 +63,38 @@
         width: 100%;
     }
 
-    /* CONTACTO */
-
-    .section-titulo-contacto {
+    /* SOBRE NOSOTROS */
+    
+    .section-titulo-about {
         h2 {
             font-size: 3.25rem;
         }
+    }
+
+    .section-video {
+        height: 33.75rem;
+        iframe {
+            width: 90%;
+        }
+    }
+
+    .container-metricas {
+        h3{
+            font-size: 3.75rem;
+        }
+        h4 {
+            font-size: 1.5625rem;
+        }
+    }
+
+    /* CONTACTO */
+    
+    .section-titulo-contacto {
+        @extend .section-titulo-about;
     }
     
     .main-contacto {
         grid-template-rows: auto 48.75rem 44.75rem;
     }
+
 }
