@@ -21,13 +21,14 @@ header nav h1 {
   margin: 0rem;
 }
 
+.actual {
+  border-bottom: 2px solid #FE500B;
+  border-bottom-right-radius: 0.3125rem;
+  border-bottom-left-radius: 0.3125rem;
+}
+
 .navbar {
   font-family: "Righteous", cursive;
-}
-.navbar .container-seleccion {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
 }
 .navbar li a {
   background-color: #11080E;

@@ -14,13 +14,14 @@ header {
     }
 }
 
+.actual {
+    border-bottom: 2px solid $color-10;
+    border-bottom-right-radius: .3125rem;
+    border-bottom-left-radius: .3125rem;
+}
+
 .navbar {
     font-family: $typo-titulos;
-    .container-seleccion {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
     li a {
         background-color: $color-60;
         color: $color-30;
