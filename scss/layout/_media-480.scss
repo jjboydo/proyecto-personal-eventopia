@@ -192,6 +192,46 @@
         }
     }
 
+    /* EVENTOS */
+
+    .section-eventos-principales {
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        .descripcion {
+            a{
+                h2{
+                    font-size: 3.75rem;
+                }
+            }
+            h4 {
+                font-size: 1.5rem;
+            }
+            h5 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .section-eventos {
+        button {
+            width: 21.25rem;
+        }
+    }
+
+    .section-categoria {
+        height: 82.375rem;
+        h3{
+            padding: 1.25rem 0 0 0;
+            align-self: center;
+        }
+        .article-container {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            row-gap: 0rem;
+        }
+    }
+
     /* FOOTER */
 
     footer {

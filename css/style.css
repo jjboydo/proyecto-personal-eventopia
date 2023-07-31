@@ -727,7 +727,7 @@ Se agrupan ya que tienen los mismos estilos
   flex-wrap: none;
   justify-content: none;
   align-items: center;
-  gap: 1.5625rem;
+  gap: 0.3125rem;
 }
 .section-categoria h3 {
   color: #FE500B;
@@ -742,7 +742,8 @@ Se agrupan ya que tienen los mismos estilos
 }
 .section-categoria .article-container article {
   background: #FFFFFF;
-  box-shadow: 0rem -0.5rem 5rem rgba(0, 0, 0, 0.07), 0rem -2.92013px 29.2013px rgba(0, 0, 0, 0.0482987), 0px -1.41767px 14.1767px rgba(0, 0, 0, 0.0389404), 0px -0.694968px 6.94968px rgba(0, 0, 0, 0.0310596), 0px -0.274791px 2.74791px rgba(0, 0, 0, 0.0217013);
+  margin: 1.25rem 0;
+  box-shadow: 0rem -0.5rem 1rem rgba(0, 0, 0, 0.07), 0rem -2.92013px 20.2013px rgba(0, 0, 0, 0.0482987), 0px -1.41767px 14.1767px rgba(0, 0, 0, 0.0389404), 0px -0.694968px 6.94968px rgba(0, 0, 0, 0.0310596), 0px -0.274791px 2.74791px rgba(0, 0, 0, 0.0217013);
   border-radius: 0.625rem;
   width: 24.1669rem;
   height: 25rem;
@@ -1002,6 +1003,20 @@ footer {
     padding-left: 5%;
     padding-right: 5%;
   }
+  /* EVENTOS */
+  .section-categoria {
+    height: 32.375rem;
+  }
+  .section-categoria .article-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 2.5rem;
+    row-gap: 3.75rem;
+    overflow: hidden;
+  }
+  .section-categoria .article-container article {
+    overflow: visible;
+  }
   /* FOOTER */
   footer {
     height: 28.125rem;
@@ -1200,6 +1215,19 @@ footer {
   .main-contacto {
     grid-template-rows: auto 48.75rem 44.75rem;
   }
+  /* EVENTOS */
+  .section-eventos-principales {
+    justify-content: space-evenly;
+  }
+  .section-eventos-principales .descripcion a h2 {
+    font-size: 4.5rem;
+  }
+  .section-eventos-principales .descripcion h4 {
+    font-size: 1.625rem;
+  }
+  .section-eventos-principales .descripcion h5 {
+    font-size: 1.625rem;
+  }
 }
 @media (max-width: 480px) {
   /* HEADER */
@@ -1363,6 +1391,36 @@ footer {
   .section-datos-contacto form button {
     margin-top: 2.125rem;
   }
+  /* EVENTOS */
+  .section-eventos-principales {
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+  }
+  .section-eventos-principales .descripcion a h2 {
+    font-size: 3.75rem;
+  }
+  .section-eventos-principales .descripcion h4 {
+    font-size: 1.5rem;
+  }
+  .section-eventos-principales .descripcion h5 {
+    font-size: 1.5rem;
+  }
+  .section-eventos button {
+    width: 21.25rem;
+  }
+  .section-categoria {
+    height: 82.375rem;
+  }
+  .section-categoria h3 {
+    padding: 1.25rem 0 0 0;
+    align-self: center;
+  }
+  .section-categoria .article-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 0rem;
+  }
   /* FOOTER */
   footer {
     height: 774px;
@@ -1455,6 +1513,34 @@ footer {
   }
   .section-datos-contacto .titulo h2 {
     font-size: 2.25rem;
+  }
+  /* EVENTOS */
+  .section-eventos-principales .descripcion a h2 {
+    font-size: 3.125rem;
+  }
+  .section-eventos-principales .descripcion h4 {
+    font-size: 1.25rem;
+  }
+  .section-eventos-principales .descripcion h5 {
+    font-size: 1.25rem;
+  }
+  .section-eventos button {
+    width: 16.25rem;
+  }
+  .section-categoria {
+    height: 77.25rem;
+  }
+  .section-categoria h3 {
+    font-size: 1.875rem;
+  }
+  .section-categoria .article-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 0rem;
+  }
+  .section-categoria .article-container article {
+    width: 18rem;
+    height: 21.375rem;
   }
 }
 @media (max-width: 320px) {

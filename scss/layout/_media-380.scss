@@ -85,4 +85,44 @@
         }
     }
 
+    /* EVENTOS */
+
+    .section-eventos-principales {
+        .descripcion {
+            a{
+                h2{
+                    font-size: 3.125rem;
+                }
+            }
+            h4 {
+                font-size: 1.25rem;
+            }
+            h5 {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    .section-eventos {
+        button {
+            width: 16.25rem;
+        }
+    }
+
+    .section-categoria {
+        height: 77.25rem;
+        h3{
+            font-size: 1.875rem;
+        }
+        .article-container {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            row-gap: 0rem;
+            article {
+                width: 18rem;
+                height: 21.375rem;
+            }
+        }
+    }
+
 }

@@ -25,7 +25,7 @@
     height: 34.375rem;
     margin-top: 1.4375rem;
     @include flex(column,none,none,center);
-    gap: 1.5625rem;
+    gap: .3125rem;
     h3 {
         color: $color-10;
         align-self: flex-start;
@@ -39,8 +39,9 @@
         gap: 2.25rem;
         article {
             background: #FFFFFF;
-            box-shadow: 0rem -0.5rem 5rem rgba(0, 0, 0, 0.07),
-                0rem -2.92013px 29.2013px rgba(0, 0, 0, 0.0482987),
+            margin: 1.25rem 0;
+            box-shadow: 0rem -0.5rem 1rem rgba(0, 0, 0, 0.07),
+                0rem -2.92013px 20.2013px rgba(0, 0, 0, 0.0482987),
                 0px -1.41767px 14.1767px rgba(0, 0, 0, 0.0389404),
                 0px -0.694968px 6.94968px rgba(0, 0, 0, 0.0310596),
                 0px -0.274791px 2.74791px rgba(0, 0, 0, 0.0217013);

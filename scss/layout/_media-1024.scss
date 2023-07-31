@@ -84,6 +84,22 @@
         padding-right: 5%;
     }
 
+    /* EVENTOS */
+
+    .section-categoria {
+        height: 32.375rem;
+        .article-container {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 0 2.5rem;
+            row-gap: 3.75rem;
+            overflow: hidden;
+            article {
+                overflow: visible;
+            }
+        }
+    }
+
     /* FOOTER */
     footer{
         height: 28.125rem;
