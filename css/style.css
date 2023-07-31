@@ -257,8 +257,11 @@ header nav h1 {
 /* EXTENSION DE SECTION 1 A LA OTRA SECTION */
 /* ESTA SECCION CORRESPONDE AL MAIN DEL INDEX */
 .section-info-2 {
-  background-color: #F4F1F9;
-  color: #11080E;
+  background-image: url(../assets/img/foto-eventos-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #F4F1F9;
+  padding-top: 1.25rem;
   display: flex;
   flex-direction: column;
   flex-wrap: none;
@@ -275,6 +278,7 @@ header nav h1 {
   align-items: center;
   gap: 20px;
   margin-bottom: 1.25rem;
+  background-image: none;
 }
 .section-info-2 .accordion {
   align-items: center;
