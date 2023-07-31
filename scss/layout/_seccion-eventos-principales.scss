@@ -13,10 +13,13 @@
         background-image: none;
         padding-left: 0%;
         a {
-            font-size: 4rem;
-            font-family: $typo-titulos;
             text-decoration: none;
             color: $color-30;
+            h2 {
+                font-size: 5.625rem;
+                font-family: $typo-titulos;
+                font-weight: bold;
+            }
         }
         h4 {
             font-size: 2rem;

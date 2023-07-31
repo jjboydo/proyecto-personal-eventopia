@@ -675,10 +675,13 @@ Se agrupan ya que tienen los mismos estilos
   padding-left: 0%;
 }
 .section-eventos-principales .descripcion a {
-  font-size: 4rem;
-  font-family: "Righteous", cursive;
   text-decoration: none;
   color: #F4F1F9;
+}
+.section-eventos-principales .descripcion a h2 {
+  font-size: 5.625rem;
+  font-family: "Righteous", cursive;
+  font-weight: bold;
 }
 .section-eventos-principales .descripcion h4 {
   font-size: 2rem;
@@ -716,26 +719,26 @@ Se agrupan ya que tienen los mismos estilos
 .section-categoria {
   background-color: #F4F1F9;
   color: #11080E;
-  width: 75rem;
+  width: 100%;
   height: 34.375rem;
   margin-top: 1.4375rem;
   display: flex;
   flex-direction: column;
   flex-wrap: none;
   justify-content: none;
-  align-items: start;
+  align-items: center;
   gap: 1.5625rem;
 }
 .section-categoria h3 {
   color: #FE500B;
+  align-self: flex-start;
   font-size: 2.25rem;
   font-family: "Righteous", cursive;
-  padding: 1.25rem 1.25rem 0rem 0px;
+  padding: 1.25rem 1.25rem 0rem 5%;
 }
 .section-categoria .article-container {
-  width: 100%;
   display: flex;
-  gap: 1.25rem;
+  gap: 2.25rem;
 }
 .section-categoria .article-container article {
   background: #FFFFFF;
@@ -750,25 +753,29 @@ Se agrupan ya que tienen los mismos estilos
   margin: 1.25rem 1.25rem 0rem 1.25rem;
 }
 .section-categoria .article-container article a {
-  font-size: 1rem;
-  font-family: "Righteous", cursive;
   text-decoration: none;
   color: #11080E;
 }
-.section-categoria .article-container article h4 {
+.section-categoria .article-container article a h4 {
+  font-size: 1rem;
+  font-family: "Righteous", cursive;
   padding: 1.25rem 1.25rem 0rem 1.25rem;
+  margin: 0;
+  font-weight: bold;
 }
 .section-categoria .article-container article p {
   color: #FE500B;
   font-size: 0.75rem;
   font-family: "Righteous", cursive;
   padding: 1.25rem 1.25rem 0rem 1.25rem;
+  margin: 0;
 }
 .section-categoria .article-container article h6 {
   color: #7E7E7E;
   font-size: 0.75rem;
   font-family: "Righteous", cursive;
   padding: 1.25rem 1.25rem 0rem 1.25rem;
+  margin: 0;
 }
 
 footer {
@@ -890,6 +897,11 @@ footer {
   .section-info-11 img {
     width: 31.25rem;
   }
+  /* EVENTOS */
+  .section-categoria .article-container article {
+    width: 20rem;
+    height: 22.375rem;
+  }
 }
 @media (max-width: 1100px) {
   .cards-container .texto {
@@ -916,6 +928,10 @@ footer {
   }
   .section-info-11 img {
     width: 25rem;
+  }
+  /* EVENTOS */
+  .section-categoria .article-container {
+    gap: 1.25rem;
   }
 }
 @media (max-width: 1024px) {
