@@ -115,9 +115,7 @@
             font-size: 1.875rem;
         }
         .article-container {
-            flex-direction: column;
-            flex-wrap: nowrap;
-            row-gap: 0rem;
+            padding: 0 .4375rem;
             article {
                 width: 18rem;
                 height: 21.375rem;
