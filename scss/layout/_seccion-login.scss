@@ -77,6 +77,7 @@
         width: 27.4375rem;
         height: 3.25rem;
         border-style: none;
+        @include animacion-button;
     }
 }
 
@@ -89,6 +90,7 @@
         border-style: none;
         @include flex(row, none, center, center); // Using the flex mixin here
         gap: 1.25rem;
+        @include animacion-button;
     }
     img {
         background-image: none;

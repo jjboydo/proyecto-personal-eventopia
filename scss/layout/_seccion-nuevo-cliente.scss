@@ -24,6 +24,7 @@
             height: 3rem;
             border-radius: 0.875rem;
             border-style: none;
+            @include animacion-button;
             a {
                 text-decoration: none;
                 color: $color-10;

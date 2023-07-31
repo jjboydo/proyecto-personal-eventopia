@@ -15,6 +15,7 @@
         border-radius: .75rem;
         border-style: none;
         margin-bottom: 2.5rem;
+        @include animacion-button;
     }
 }
 

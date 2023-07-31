@@ -26,6 +26,7 @@ header {
         background-color: $color-60;
         color: $color-30;
         font-size: 1.25rem;
+        @include animacion-li;
         &:hover {
             color: $color-10;
         }

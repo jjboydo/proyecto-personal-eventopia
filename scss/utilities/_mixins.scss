@@ -6,12 +6,20 @@
     align-items: $align;
 }
 
-@mixin grid ($col, $row, $justify, $align, $area) {
-    display: grid;
-    grid-template-columns: $col;
-    grid-template-rows: $row;
-    justify-content: $justify;
-    align-content: $align;
-    grid-template-areas: $area;
+@mixin animacion-button {
+    transition: all 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    &:hover{
+        transform: translateZ(50px);
+        box-shadow: 0 0 20px 0px $color-10;
+        transform: scale(1.05);
+    }
+}
 
+@mixin animacion-li {
+    transition: all 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    &:hover{
+        transform: translateZ(50px);
+        // box-shadow: 0 0 20px 0px $color-10;
+        transform: scale(1.05);
+    }
 }

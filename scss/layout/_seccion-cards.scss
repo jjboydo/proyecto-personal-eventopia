@@ -28,6 +28,12 @@
         height: 28rem;
         gap: 0rem;
         @include flex(column, none, none, start);
+        transition: all 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+        &:hover{
+            transform: translateY(-20px);
+            transform: scale(1.05);
+            transform-origin: 50% 50%;
+        }
         img {
             align-self: center;
             border-radius: 13px;
@@ -70,3 +76,14 @@
     grid-column: 3/4;
     align-self: center;
 }
+
+@keyframes text-pop-up-top {
+    0% {
+      transform: translateY(0);
+      transform-origin: 50% 50%;
+    }
+    100% {
+      transform: translateY(-20px);
+      transform-origin: 50% 50%;
+    }
+  }
