@@ -253,6 +253,9 @@ header nav h1 {
   list-style-image: url(../assets/img/Icon.png);
   padding-left: 2rem;
 }
+.section-info-1 img, .section-info-11 img {
+  object-fit: contain;
+}
 
 /* EXTENSION DE SECTION 1 A LA OTRA SECTION */
 /* ESTA SECCION CORRESPONDE AL MAIN DEL INDEX */
@@ -892,6 +895,7 @@ footer {
 .footer-info-contacto div img {
   width: 1.875rem;
   height: 1.875rem;
+  object-fit: contain;
 }
 .footer-info-contacto div p {
   font-size: 1rem;
