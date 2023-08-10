@@ -51,16 +51,28 @@ footer {
         margin-bottom: 1rem;
     }
     form {
-        input {
-            background-color: $color-10;
-            font-size: .875rem;
-            font-family: $typo-parrafos;
-            width: 21.875rem;
-            height: 3rem;
-            border-style: none;
-            &::placeholder {
-                color: $color-30;
-                padding-left: 0.625rem;
+        width: 100%;
+        .email-input{
+            display: flex;
+            align-items: center;
+            input {
+                background-color: $color-10;
+                font-size: .875rem;
+                font-family: $typo-parrafos;
+                width: 19.875rem;
+                height: 3rem;
+                border-style: none;
+                &::placeholder {
+                    color: $color-30;
+                    padding-left: 0.625rem;
+                }
+            }
+            label {
+                background-color: $color-10;
+                height: 3rem;
+                display: flex;
+                align-items: center;
+                padding-right: .625rem;
             }
         }
     }
@@ -75,4 +87,9 @@ footer {
     height: 6rem;
     @include flex(row,none,none,center);
     gap: 1.25rem;
+    img {
+        width: 3.4375rem;
+        height: 3.4375rem;
+        object-fit: cover;
+    }
 }

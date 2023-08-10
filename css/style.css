@@ -218,7 +218,7 @@ header nav h1 {
   background-color: #F4F1F9;
   color: #11080E;
   width: 100%;
-  height: 31.25rem;
+  height: 35rem;
   padding: 3.75rem 7.3125rem;
   display: flex;
   flex-direction: row;
@@ -917,17 +917,31 @@ footer {
   font-family: "Righteous", cursive;
   margin-bottom: 1rem;
 }
-.footer-suscribirse form input {
+.footer-suscribirse form {
+  width: 100%;
+}
+.footer-suscribirse form .email-input {
+  display: flex;
+  align-items: center;
+}
+.footer-suscribirse form .email-input input {
   background-color: #FE500B;
   font-size: 0.875rem;
   font-family: "Poppins", sans-serif;
-  width: 21.875rem;
+  width: 19.875rem;
   height: 3rem;
   border-style: none;
 }
-.footer-suscribirse form input::placeholder {
+.footer-suscribirse form .email-input input::placeholder {
   color: #F4F1F9;
   padding-left: 0.625rem;
+}
+.footer-suscribirse form .email-input label {
+  background-color: #FE500B;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding-right: 0.625rem;
 }
 
 #enviar {
@@ -943,6 +957,11 @@ footer {
   justify-content: none;
   align-items: center;
   gap: 1.25rem;
+}
+.footer-redes-sociales img {
+  width: 3.4375rem;
+  height: 3.4375rem;
+  object-fit: cover;
 }
 
 /* Layouts correspondientes a media queries */
@@ -1507,7 +1526,7 @@ footer {
     width: 100%;
   }
   .footer-suscribirse {
-    width: 100%;
+    width: 80%;
   }
   .footer-suscribirse form {
     width: 100%;
@@ -1523,7 +1542,7 @@ footer {
     justify-content: center;
   }
   .footer-redes-sociales a img {
-    width: 80%;
+    width: 2.75rem;
   }
 }
 @media (max-width: 380px) {
@@ -1610,6 +1629,10 @@ footer {
   .section-categoria .article-container article {
     width: 18rem;
     height: 21.375rem;
+  }
+  /* FOOTER */
+  .footer-suscribirse {
+    width: 100%;
   }
 }
 @media (max-width: 320px) {
@@ -1745,7 +1768,7 @@ footer {
     justify-content: center;
   }
   .footer-redes-sociales a img {
-    width: 80%;
+    width: 2.75rem;
   }
 }
 
