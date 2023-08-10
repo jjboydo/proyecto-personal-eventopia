@@ -40,7 +40,7 @@
         }
     }
     form {
-        @include flex(column, none, center, start); // Using the flex mixin here
+        @include flex(column, none, center, start);
         gap: 1.25rem;
         label {
             font-size: 1rem;
@@ -48,15 +48,16 @@
         }
         input {
             width: 27.4375rem;
+            font-family: $typo-parrafos;
             height: 3rem;
             border-radius: 0.75rem;
             background: #F7FBFF;
             border: 0.0625rem solid #D4D7E3;
+            padding-left: 0.625rem;
             &::placeholder {
                 color: #8897AD;
                 font-size: 1rem;
                 font-family: $typo-parrafos;
-                padding-left: 0.625rem;
             }
         }
         a {
@@ -82,13 +83,13 @@
 }
 
 .login-alt {
-    @include flex(column, none, none, start); // Using the flex mixin here
+    @include flex(column, none, none, start);
     gap: 16px;
     button {
         background-color: #b5b5b571;
         color: $color-60;
         border-style: none;
-        @include flex(row, none, center, center); // Using the flex mixin here
+        @include flex(row, none, center, center);
         gap: 1.25rem;
         @include animacion-button;
     }

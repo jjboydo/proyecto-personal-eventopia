@@ -59,12 +59,13 @@ footer {
                 background-color: $color-10;
                 font-size: .875rem;
                 font-family: $typo-parrafos;
+                color: $color-30;
                 width: 19.875rem;
                 height: 3rem;
                 border-style: none;
+                padding-left: 1rem;
                 &::placeholder {
                     color: $color-30;
-                    padding-left: 0.625rem;
                 }
             }
             label {
@@ -72,7 +73,6 @@ footer {
                 height: 3rem;
                 display: flex;
                 align-items: center;
-                padding-right: .625rem;
             }
         }
     }
