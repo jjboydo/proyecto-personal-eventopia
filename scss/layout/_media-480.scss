@@ -40,7 +40,8 @@
     }
 
     .section-cards {
-        height: 66rem;
+        height: 70rem;
+        padding-bottom: 1.875rem;
     }
 
     .cards-container {
@@ -152,6 +153,7 @@
             gap: 3.5rem;
             img{
                 width: 7.5rem;
+                object-fit: contain;
             }
         }
     }

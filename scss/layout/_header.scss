@@ -10,18 +10,24 @@ header {
             width: 17.0625rem;
             height: 4rem;
             margin: 0rem;
+            a {
+                img {
+                    display: flex;
+                }
+            }
         }
     }
 }
 
 .actual {
     border-bottom: 2px solid $color-10;
-    border-bottom-right-radius: .3125rem;
-    border-bottom-left-radius: .3125rem;
+    // border-bottom-right-radius: .3125rem;
+    border-bottom-left-radius: .625rem;
 }
 
 .navbar {
     font-family: $typo-titulos;
+    padding: .9375rem 0rem;
     li a {
         background-color: $color-60;
         color: $color-30;

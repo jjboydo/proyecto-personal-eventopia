@@ -20,25 +20,33 @@ header nav h1 {
   height: 4rem;
   margin: 0rem;
 }
+header nav h1 a img {
+  display: flex;
+}
 
 .actual {
   border-bottom: 2px solid #FE500B;
-  border-bottom-right-radius: 0.3125rem;
-  border-bottom-left-radius: 0.3125rem;
+  border-bottom-left-radius: 0.625rem;
 }
 
 .navbar {
   font-family: "Righteous", cursive;
+  padding: 0.9375rem 0rem;
 }
 .navbar li a {
   background-color: #11080E;
   color: #F4F1F9;
   font-size: 1.25rem;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .navbar li a:hover {
   transform: translateZ(50px);
   transform: scale(1.05);
+}
+.navbar li a:active {
+  transform: translateY(-1px);
+  transform: rotate(2deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .navbar li a:hover {
   color: #FE500B;
@@ -91,12 +99,22 @@ header nav h1 {
   padding: 0.75rem 1.25rem;
   border-radius: 0.875rem;
   border-style: none;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .section-principal .titulo button:hover {
   transform: translateZ(50px);
   box-shadow: 0 0 20px 0px #FE500B;
   transform: scale(1.05);
+}
+.section-principal .titulo button:active {
+  transform: translateY(-1px);
+  transform: rotate(3deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #F4F1F9;
+  color: #11080E;
+}
+.section-principal .titulo button:active a {
+  color: #11080E;
 }
 .section-principal .titulo button a {
   text-decoration: none;
@@ -108,6 +126,7 @@ header nav h1 {
   width: 100%;
   grid-column: 2/3;
   justify-self: end;
+  height: auto;
 }
 .section-principal .img-fullscreen {
   display: none;
@@ -172,6 +191,7 @@ header nav h1 {
   gap: 1.25rem;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+  cursor: pointer;
 }
 .cards-container .texto .cards-descripcion img {
   box-shadow: none;
@@ -290,9 +310,15 @@ header nav h1 {
 .section-info-2 .accordion .accordion-item {
   width: 37.5rem;
 }
+.section-info-2 .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #FE500B;
+  color: #11080E;
+}
 .section-info-2 .accordion .accordion-item .accordion-body {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
+  background-color: #11080E;
+  color: #F4F1F9;
 }
 .section-info-2 h2 {
   font-size: 2.5rem;
@@ -334,12 +360,22 @@ header nav h1 {
   height: 3rem;
   border-radius: 0.875rem;
   border-style: none;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .section-nuevo-cliente .texto button:hover {
   transform: translateZ(50px);
   box-shadow: 0 0 20px 0px #FE500B;
   transform: scale(1.05);
+}
+.section-nuevo-cliente .texto button:active {
+  transform: translateY(-1px);
+  transform: rotate(3deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #F4F1F9;
+  color: #11080E;
+}
+.section-nuevo-cliente .texto button:active a {
+  color: #11080E;
 }
 .section-nuevo-cliente .texto button a {
   text-decoration: none;
@@ -450,12 +486,22 @@ header nav h1 {
   width: 27.4375rem;
   height: 3.25rem;
   border-style: none;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .iniciar-sesion button:hover {
   transform: translateZ(50px);
   box-shadow: 0 0 20px 0px #FE500B;
   transform: scale(1.05);
+}
+.iniciar-sesion button:active {
+  transform: translateY(-1px);
+  transform: rotate(3deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #F4F1F9;
+  color: #11080E;
+}
+.iniciar-sesion button:active a {
+  color: #11080E;
 }
 
 .login-alt {
@@ -476,12 +522,22 @@ header nav h1 {
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .login-alt button:hover {
   transform: translateZ(50px);
   box-shadow: 0 0 20px 0px #FE500B;
   transform: scale(1.05);
+}
+.login-alt button:active {
+  transform: translateY(-1px);
+  transform: rotate(3deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #F4F1F9;
+  color: #11080E;
+}
+.login-alt button:active a {
+  color: #11080E;
 }
 .login-alt img {
   background-image: none;
@@ -506,11 +562,16 @@ header nav h1 {
   text-decoration: none;
   font-size: 1rem;
   font-family: "Righteous", cursive;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .registrate-container a:hover {
   transform: translateZ(50px);
   transform: scale(1.05);
+}
+.registrate-container a:active {
+  transform: translateY(-1px);
+  transform: rotate(2deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Layouts correspondientes al contacto */
@@ -649,12 +710,22 @@ Se agrupan ya que tienen los mismos estilos
   width: 100%;
   height: 3.375rem;
   margin-top: 3.125rem;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .section-datos-contacto form button:hover {
   transform: translateZ(50px);
   box-shadow: 0 0 20px 0px #FE500B;
   transform: scale(1.05);
+}
+.section-datos-contacto form button:active {
+  transform: translateY(-1px);
+  transform: rotate(3deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #F4F1F9;
+  color: #11080E;
+}
+.section-datos-contacto form button:active a {
+  color: #11080E;
 }
 
 /* Layouts correspondientes al sobre nosotros */
@@ -782,12 +853,22 @@ Se agrupan ya que tienen los mismos estilos
   border-radius: 0.75rem;
   border-style: none;
   margin-bottom: 2.5rem;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .section-eventos button:hover {
   transform: translateZ(50px);
   box-shadow: 0 0 20px 0px #FE500B;
   transform: scale(1.05);
+}
+.section-eventos button:active {
+  transform: translateY(-1px);
+  transform: rotate(3deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #F4F1F9;
+  color: #11080E;
+}
+.section-eventos button:active a {
+  color: #11080E;
 }
 
 .section-categoria {
@@ -816,6 +897,7 @@ Se agrupan ya que tienen los mismos estilos
 }
 .section-categoria .article-container article {
   background: #FFFFFF;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   margin: 1.25rem 0;
   box-shadow: 0rem -0.5rem 1rem rgba(0, 0, 0, 0.07), 0rem -2.92013px 20.2013px rgba(0, 0, 0, 0.0482987), 0px -1.41767px 14.1767px rgba(0, 0, 0, 0.0389404), 0px -0.694968px 6.94968px rgba(0, 0, 0, 0.0310596), 0px -0.274791px 2.74791px rgba(0, 0, 0, 0.0217013);
   border-radius: 0.625rem;
@@ -823,6 +905,11 @@ Se agrupan ya que tienen los mismos estilos
   height: 25rem;
   display: flex;
   flex-direction: column;
+}
+.section-categoria .article-container article:hover {
+  transform: translateY(-20px);
+  transform: scale(1.05);
+  transform-origin: 50% 50%;
 }
 .section-categoria .article-container article img {
   margin: 1.25rem 1.25rem 0rem 1.25rem;
@@ -1056,7 +1143,10 @@ footer {
   }
   .section-info-1, .section-info-11 {
     flex-direction: column-reverse;
-    height: 48.75rem;
+    height: 51.75rem;
+  }
+  .section-info-1 article, .section-info-11 article {
+    height: 50.75rem;
   }
   .section-info-1 img, .section-info-11 img {
     width: 34.375rem;
@@ -1064,7 +1154,10 @@ footer {
   }
   .section-info-11 {
     flex-direction: column;
-    height: 48.75rem;
+    height: 51.75rem;
+  }
+  .section-info-11 article {
+    height: 50.75rem;
   }
   .section-info-11 img {
     width: 34.375rem;
@@ -1278,7 +1371,7 @@ footer {
   }
   .section-info-2 .texto {
     width: 26.875rem;
-    height: 13.75rem;
+    height: 17.75rem;
   }
   .section-info-2 .accordion .accordion-item {
     width: 28.125rem;
@@ -1356,7 +1449,8 @@ footer {
     font-size: 1rem;
   }
   .section-cards {
-    height: 66rem;
+    height: 70rem;
+    padding-bottom: 1.875rem;
   }
   .cards-container {
     height: 50rem;
@@ -1453,6 +1547,7 @@ footer {
   }
   .section-marcas .marcas-container img {
     width: 7.5rem;
+    object-fit: contain;
   }
   .section-video {
     height: 56.25rem;

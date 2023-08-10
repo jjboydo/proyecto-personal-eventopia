@@ -21,9 +21,17 @@
         margin-bottom: 3.125rem;
         .accordion-item {
             width: 37.5rem;
+            .accordion-button{
+                &:not(.collapsed) {
+                    background-color: $color-10;
+                    color: $color-60;
+                }
+            }
             .accordion-body {
                 font-size: 1rem;
                 font-family: $typo-parrafos;
+                background-color: $color-60;
+                color: $color-30;
             }
         }
     }
