@@ -4,14 +4,29 @@
     background-color: #F4F1F9;
     color: $color-60;
     width: 100%;
-    display: grid;
-    grid-template-columns: 6rem 1fr 6rem;
-    grid-template-rows: 28.125rem;
     height: 31.25rem;
     gap: 2rem;
     padding-top: .3125rem;
     grid-gap: 1.25rem;
     align-content: center;
+    overflow: hidden;
+    .carousel-item {
+        transition: transform 1s cubic-bezier(0.68, -0.1, 0.32, 1.0);
+        height: 31.25rem;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        width: 5%;
+    }
+    .carousel-control-prev-icon {
+        background-image: url("../assets/img/Back.png");
+        background-size: cover;
+        width: 5rem;
+        height: 5rem;
+    }
+    .carousel-control-next-icon {
+        @extend .carousel-control-prev-icon;
+        background-image: url("../assets/img/Forward.png");
+    }
 }
 
 .flecha-atras {
@@ -23,10 +38,12 @@
     grid-column: 2/3;
     @include flex(row,wrap,space-evenly,center);
     gap: 2rem;
+    padding: 1.25rem 5rem;
     .texto {
         width: 21.875rem;
         height: 28rem;
         gap: 0rem;
+        padding: 0;
         @include flex(column, none, none, start);
         @include animacion-card;
         img {

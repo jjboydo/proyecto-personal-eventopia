@@ -18,15 +18,25 @@
         height: 40.625rem;
         align-content: start;
         padding-top: 1.875rem;
+        .carousel-item {
+            height: 40.625rem;
+        }
+        .carousel-control-next, .carousel-control-prev{
+            width: 10%;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            width: 4rem;
+            height: 4rem;
+        }
     }
 
-    .flecha-atras {
-        display: none;
-    }
+    // .flecha-atras {
+    //     display: none;
+    // }
 
-    .flecha-adelante {
-        display: none;
-    }
+    // .flecha-adelante {
+    //     display: none;
+    // }
 
     .cards-container {
         .texto {
