@@ -161,11 +161,6 @@ header nav h1 a img {
   background-image: url("../assets/img/Forward.png");
 }
 
-.flecha-atras {
-  grid-column: 1/2;
-  align-self: center;
-}
-
 .cards-container {
   grid-column: 2/3;
   display: flex;
@@ -234,21 +229,6 @@ header nav h1 a img {
   color: #FE500B;
 }
 
-.flecha-adelante {
-  grid-column: 3/4;
-  align-self: center;
-}
-
-@keyframes text-pop-up-top {
-  0% {
-    transform: translateY(0);
-    transform-origin: 50% 50%;
-  }
-  100% {
-    transform: translateY(-20px);
-    transform-origin: 50% 50%;
-  }
-}
 /* ESTA SECCION CORRESPONDE AL MAIN DEL INDEX Y TAMBIEN DEL ABOUT US */
 .section-info-1, .section-info-11 {
   background-color: #F4F1F9;
@@ -1279,9 +1259,6 @@ footer {
     grid-row: 1/2;
     box-shadow: 406px 4px 44px 0px #11080E inset;
   }
-  .section-cards {
-    grid-gap: 0px;
-  }
   .cards-container .texto {
     width: 12.5rem;
   }
@@ -1732,15 +1709,6 @@ footer {
   .iniciar-sesion button {
     width: 18.75rem;
   }
-  .login-alt button {
-    gap: 0.625rem;
-    font-size: 1rem;
-  }
-  .registrate-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.3125rem;
-  }
   /* CONTACTO */
   .main-contacto {
     grid-template-rows: auto 48.75rem 24.75rem;
@@ -1815,10 +1783,6 @@ footer {
   .cards-container {
     height: 50rem;
   }
-  .cards-container .texto {
-    width: 10.8125rem;
-    height: 15.625rem;
-  }
   .section-info-1, .section-info-11 {
     gap: 1rem;
   }
@@ -1861,15 +1825,6 @@ footer {
   }
   .iniciar-sesion button {
     width: 16.3125rem;
-  }
-  .login-alt button {
-    gap: 0.625rem;
-    font-size: 1rem;
-  }
-  .registrate-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.3125rem;
   }
   /* CONTACTO */
   .section-titulo-contacto h2 {

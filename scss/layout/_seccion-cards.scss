@@ -29,11 +29,6 @@
     }
 }
 
-.flecha-atras {
-    grid-column: 1/2;
-    align-self: center;
-}
-
 .cards-container {
     grid-column: 2/3;
     @include flex(row,wrap,space-evenly,center);
@@ -84,19 +79,3 @@
         }
     }
 }
-
-.flecha-adelante {
-    grid-column: 3/4;
-    align-self: center;
-}
-
-@keyframes text-pop-up-top {
-    0% {
-      transform: translateY(0);
-      transform-origin: 50% 50%;
-    }
-    100% {
-      transform: translateY(-20px);
-      transform-origin: 50% 50%;
-    }
-  }
